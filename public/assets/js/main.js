@@ -11,6 +11,42 @@ var swiper = new Swiper("#banner_swiper", {
 });
 
 
+var swiper = new Swiper(".product_slider", {
+    spaceBetween: 20,
+    loop: true,
+    slidesPerView: 4,
+    // autoplay: {
+    //     delay: 5000,
+    //     disableOnInteraction: false,
+    // },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    pagination: false,
+
+    // Responsive breakpoints
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        576: {
+            slidesPerView: 2,
+        },
+        768: {
+            slidesPerView: 3,
+        },
+        992: {
+            slidesPerView: 4,
+        },
+        1200: {
+            slidesPerView: 4,
+        }
+    }
+});
+
+
+
 $('.select2').select2({
     placeholder: "Property type",
     allowClear: true,

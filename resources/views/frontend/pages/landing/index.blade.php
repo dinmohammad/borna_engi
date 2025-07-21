@@ -82,6 +82,135 @@
             </div>
         </div>
     </section>
+    <!-- Banner .END -->
+
+    <!-- Highlight Product Section START -->
+    <section class="hightlight-product-wrapper position-relative overflow-hidden section-padding-tb-70">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 col-md-12">
+                    <div class="section-heading">
+                        <h2>Highlighted Projects</h2>
+                        <p class="m-0">Turpis facilisis tempor pulvinar in lobortis ornare magna.</p>
+                    </div>
+                </div>
+
+                <div class="col-xl-12 col-md-12">
+                    <div class="section-content section-content-top-margin">
+                        <div class="swiper product_slider overflow-visible">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="single-item-box position-relative">
+                                        <img src="{{ asset('assets/images/products/product_1.png') }}" width="100%" heigth="500" alt="borna engineering product ">
+                                        <div class="stb-bottom-content">
+                                            <h5>Vintage Villa</h5>
+                                            <div class="icon-with-text-wrap">
+                                                <i class="fa fa-map-marker"></i>
+                                                <span>2715 Ash Dr. San Jose, Dubai</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="single-item-box position-relative">
+                                        <img src="{{ asset('assets/images/products/product_1.png') }}" width="100%" heigth="500" alt="borna engineering product ">
+                                        <div class="stb-bottom-content">
+                                            <h5>Vintage Villa</h5>
+                                            <div class="icon-with-text-wrap">
+                                                <i class="fa fa-map-marker"></i>
+                                                <span>2715 Ash Dr. San Jose, Dubai</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="single-item-box position-relative">
+                                        <img src="{{ asset('assets/images/products/product_1.png') }}" width="100%" heigth="500" alt="borna engineering product ">
+                                        <div class="stb-bottom-content">
+                                            <h5>Vintage Villa</h5>
+                                            <div class="icon-with-text-wrap">
+                                                <i class="fa fa-map-marker"></i>
+                                                <span>2715 Ash Dr. San Jose, Dubai</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="single-item-box position-relative">
+                                        <img src="{{ asset('assets/images/products/product_1.png') }}" width="100%" heigth="500" alt="borna engineering product ">
+                                        <div class="stb-bottom-content">
+                                            <h5>Vintage Villa</h5>
+                                            <div class="icon-with-text-wrap">
+                                                <i class="fa fa-map-marker"></i>
+                                                <span>2715 Ash Dr. San Jose, Dubai</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="single-item-box position-relative">
+                                        <img src="{{ asset('assets/images/products/product_1.png') }}" width="100%" heigth="500" alt="borna engineering product ">
+                                        <div class="stb-bottom-content w-75">
+                                            <h5>Vintage Villa</h5>
+                                            <div class="icon-with-text-wrap">
+                                                <i class="fa fa-map-marker"></i>
+                                                <span>2715 Ash Dr. San Jose, Dubai</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="single-item-box position-relative">
+                                        <img src="{{ asset('assets/images/products/product_1.png') }}" width="100%" heigth="500" alt="borna engineering product ">
+                                        <div class="stb-bottom-content w-75">
+                                            <h5>Vintage Villa</h5>
+                                            <div class="icon-with-text-wrap">
+                                                <i class="fa fa-map-marker"></i>
+                                                <span>2715 Ash Dr. San Jose, Dubai</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="single-item-box position-relative">
+                                        <img src="{{ asset('assets/images/products/product_1.png') }}" width="100%" heigth="500" alt="borna engineering product ">
+                                        <div class="stb-bottom-content w-75">
+                                            <h5>Vintage Villa</h5>
+                                            <div class="icon-with-text-wrap">
+                                                <i class="fa fa-map-marker"></i>
+                                                <span>2715 Ash Dr. San Jose, Dubai</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="single-item-box position-relative">
+                                        <img src="{{ asset('assets/images/products/product_1.png') }}" width="100%" heigth="500" alt="borna engineering product ">
+                                        <div class="stb-bottom-content w-75">
+                                            <h5>Vintage Villa</h5>
+                                            <div class="icon-with-text-wrap">
+                                                <i class="fa fa-map-marker"></i>
+                                                <span>2715 Ash Dr. San Jose, Dubai</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Highlight Product .END -->
+
+
+
+
+    <!-- Banner Section START -->
     <!-- Banne .END -->
 
 
