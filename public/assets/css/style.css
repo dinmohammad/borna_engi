@@ -29,6 +29,16 @@ a{
     height: 100%;
     object-fit: cover;
 }
+.theme-primary-solid-button{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    background-color: #0B0D4E;
+    color: #fff;
+    border: none;
+    padding: 17px 60px
+}
+
 /* ========= Global Css END ======== */
 
 /* ========= Header Css Start ======== */
@@ -54,6 +64,7 @@ a{
     font-weight: 500;
     color: #fff !important;
     padding: 10px 20px !important;
+    text-transform: uppercase;
 }
 
 
@@ -99,7 +110,24 @@ a{
 .hero-wrapper .swiper-slide img {
     height: 928px;
 }
+.hero-single-input > label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+    line-height: 24px;
+    text-align: left;
+    text-transform: capitalize;
+}
 
+.hero-single-input > select {
+    border: navajowhite;
+    padding: 10px 0;
+}
+
+.hero-single-input {
+    padding: 0 24px;
+    border-right: 1px solid #CFD3D6!important;
+}
 /* ========= Bannder Css END ======== */
 
 
