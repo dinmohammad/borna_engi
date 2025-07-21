@@ -123,10 +123,22 @@ a{
     border: navajowhite;
     padding: 10px 0;
 }
+.hero-single-input > select:focus{
+    box-shadow: none !important;
+}
 
 .hero-single-input {
     padding: 0 24px;
     border-right: 1px solid #CFD3D6!important;
+}
+#banner_swiper span.swiper-pagination-bullet {
+    background: #fff !important;
+    width: 100px;
+    border-radius: 10px;
+    height: 3px;
+}
+#banner_swiper .swiper-pagination{
+    bottom: 17px;
 }
 /* ========= Bannder Css END ======== */
 
