@@ -1,0 +1,108 @@
+/* ========= Global Css Start ======== */
+body{
+    font-family: "Inter", sans-serif !important;
+}
+a{
+    text-decoration: none !important;
+}
+.container-fluid{
+    max-width: 1800px;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100% !important;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* ========= Global Css END ======== */
+
+/* ========= Header Css Start ======== */
+.top-bar-wrapper {
+    border-bottom: 0.5px solid #DBDFEC;
+}
+.social-media-link li a {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #FFF;
+}
+.social-media-link li > a > i {
+    font-size: 22px;
+}
+.call-me-wrap {
+    border-left: 1px solid #fff;
+    padding-left: 16px;
+}
+.header-section li a.nav-link {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 500;
+    color: #fff !important;
+    padding: 10px 20px !important;
+}
+
+
+.header-section li a.nav-link {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px; /* Ensures space for the underline */
+  }
+  .header-section li a.nav-link.active{
+    background: #ffffff1c;
+  }
+  .header-section li a.nav-link.active::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 100% !important;
+    height: 3px;
+    background-color: #ffffff;
+    border-radius: 61px;
+    transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transform: translateX(-50%);
+  }
+  .header-section li a.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background-color: #ffffff;
+    border-radius: 61px;
+    transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transform: translateX(-50%);
+  }
+  
+  .header-section li a.nav-link:hover::after {
+    width: 100%;
+  }
+/* ========= Header Css END ======== */
+
+/* ========= Bannder Css Start ======== */
+.hero-wrapper .swiper-slide img {
+    height: 928px;
+}
+
+/* ========= Bannder Css END ======== */
+
+
+
+/* ========= Global Css Start ======== */
+/* ========= Global Css END ======== */
