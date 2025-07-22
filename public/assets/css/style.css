@@ -310,6 +310,44 @@ a{
 
 
 
+/* ========= Client Testimonial Css Start ======== */
+
+.swci-text p {
+    font-size: 28px;
+    line-height: 40px;
+    font-weight: 500;
+    color: #3A1755;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.swci-text h6 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 110%;
+    color: #3A1755;
+}
+
+.swci-text span {
+    font-size: 18px;
+    line-height: 110%;
+    color: #A797B4;
+    font-weight: 400;
+}
+.quotes-icon-wrap{
+    bottom: 15px;
+    right: 15px;
+}
+/* ========= Client Testimonial Css END ======== */
+
+
+
+
+
+
 
 
 

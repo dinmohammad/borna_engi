@@ -338,10 +338,10 @@
             <div class="row">
                 <div class="col-xl-12 col-md-12">
                     <div class="d-flex flex-wrap justify-content-between align-items-center gap-3">
-                        <div class="section-heading">
+                        <div class="section-heading w-50">
                             <h2 class="text-white">Our Services</h2>
                             <p class="m-0 text-white"> 
-                                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere <br>
+                                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
                                 cubilia curae; Proin sodales ultrices nulla blandit volutpat.
                             </p>
                         </div>
@@ -386,6 +386,67 @@
         </div>
     </section>
     <!-- Our Service .END -->
+
+    <!-- Client Testimonials Section START -->
+    <section class="client-testimonials-wrapper position-relative overflow-hidden section-padding-tb-70 theme-bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 col-md-12">
+                    <div class="d-flex flex-wrap justify-content-between align-items-center gap-3">
+                        <div class="section-heading w-50">
+                            <h2 class="text-white">Client Testimonials</h2>
+                            <p class="m-0 text-white"> 
+                                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere  cubilia curae; Proin sodales ultrices nulla blandit volutpat.
+                            </p>
+                        </div>
+                        <button class="theme-white-solid-button mt-4">View All</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="section-content section-content-top-margin">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="swiper client_testimonials_slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide single-testi-image d-flex align-items-start gap-3">
+                                    <div class="swci-text position-relative bg-white p-5">
+                                        <p>I uploaded my floor plans, chose stunning furniture and decor, and within minutes, I had photorealistic renderings that showcased the potential of the remodeled space.</p>
+
+                                        <h6>Hannah Burress</h6>
+                                        <span>Freelancer</span>
+
+                                        <div class="quotes-icon-wrap position-absolute text-end w-100">
+                                            <img class="object-fit-cover" src="{{ asset('assets/images/icons/quotes_1.png') }}" height="80" width="80"  alt="borna engineering product ">
+                                        </div>
+                                    </div>
+                                    <img class="object-fit-cover" src="{{ asset('assets/images/testimonials/client-1.png') }}" height="286" width="286"  alt="borna engineering product ">
+                                </div>
+                                <div class="swiper-slide single-testi-image d-flex align-items-start gap-3">
+                                    <div class="swci-text position-relative bg-white p-5">
+                                        <p>I uploaded my floor plans, chose stunning furniture and decor, and within minutes, I had photorealistic renderings that showcased the potential of the remodeled space.</p>
+
+                                        <h6>Hannah Burress</h6>
+                                        <span>Freelancer</span>
+
+                                        <div class="quotes-icon-wrap position-absolute text-end w-100">
+                                            <img class="object-fit-cover" src="{{ asset('assets/images/icons/quotes_1.png') }}" height="80" width="80"  alt="borna engineering product ">
+                                        </div>
+                                    </div>
+                                    <img class="object-fit-cover" src="{{ asset('assets/images/testimonials/client-1.png') }}" height="286" width="286"  alt="borna engineering product ">
+                                </div>
+                            </div>
+                            <!-- Navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Client Testimonials .END -->
 
 
     

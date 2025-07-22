@@ -24,6 +24,20 @@ var swiper = new Swiper(".why_choose_slider", {
     pagination: false,
 });
 
+var swiper = new Swiper(".client_testimonials_slider", {
+    spaceBetween: 10,
+    slidesPerView: 1,
+    autoplay: {
+        delay: 5000, // 5 seconds
+        disableOnInteraction: false, // keeps autoplay even after user interaction
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    pagination: false,
+});
+
 
 var swiper = new Swiper(".product_slider", {
     spaceBetween: 20,
