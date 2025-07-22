@@ -32,10 +32,18 @@
 
         <main>
             <!-- Preloader -->
-            
+            <!-- <div class="preloader-activate preloader-active open_tm_preloader">
+                <div class="preloader-area-wrap">
+                    <div class="spinner d-flex justify-content-center align-items-center h-100">
+                        <div class="bounce1"></div>
+                        <div class="bounce2"></div>
+                        <div class="bounce3"></div>
+                    </div>
+                </div>
+            </div> -->
             <!--/Preloader -->
 
-            <div class="cd-index cd-main-content">
+            <div class="cd-index cd-main-content" style="opacity: 0; transition: opacity 0.5s ease;">
                 <!-- Page Content -->
                 <div id="page-content" class="light-content" data-bgcolor="#171717">
                     <!-- Header -->
