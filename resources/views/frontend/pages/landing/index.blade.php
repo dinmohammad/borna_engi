@@ -303,6 +303,35 @@
     </section>
     <!-- Why Choose .END -->
 
+    <!-- CEO Section START -->
+    <section class="ceo-info-wrapper position-relative overflow-hidden section-padding-tb-70">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- left -->
+                <div class="col-xl-6 col-md-6 col-12">
+                    <div class="ceo-text">
+                        <div class="section-heading">
+                            <h2>Borna Engineering is an Architectural based Engineering firm</h2>
+                            <p class="m-0"> 
+                                We are the quality based architectural practice in the whole Bangladesh to
+                                follow a unique process to design deliver projects efficiently and quickly,
+                                cost reducing and improving quality.
+                            </p>
+                            <button class="theme-primary-solid-button mt-4">More Details</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- right -->
+                <div class="col-xl-6 col-md-6 col-12">
+                    <div class="ceo-image position-relative">
+                        <img src="{{ asset('assets/images/ceo.png') }}" width="100%" heigth="100%" alt="borna engineering product ">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CEO .END -->
+
 
 
 
