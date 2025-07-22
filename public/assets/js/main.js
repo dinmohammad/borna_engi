@@ -38,6 +38,43 @@ var swiper = new Swiper(".client_testimonials_slider", {
     pagination: false,
 });
 
+var swiper = new Swiper(".video_slider", {
+    spaceBetween: 20,
+    loop: true,
+    slidesPerView: 3,
+    speed: 1000, // ⏱️ 1200ms = 1s transition between slides
+
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    pagination: false,
+
+    // Responsive breakpoints
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        576: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        992: {
+            slidesPerView: 3,
+        },
+        1200: {
+            slidesPerView: 3,
+        }
+    }
+});
+
+
 
 var swiper = new Swiper(".product_slider", {
     spaceBetween: 20,
@@ -104,3 +141,13 @@ $('.single-item-box-two').on('mouseenter', function () {
     $(this).addClass('active'); // add to hovered
 });
 
+
+$('.youtube-thumbnail').on('click', function () {
+    const videoId = $(this).data('id');
+    const autoplayUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+    $('#youtubeIframe').attr('src', autoplayUrl);
+});
+
+$('#youtubeModal').on('hidden.bs.modal', function () {
+    $('#youtubeIframe').attr('src', '');
+});

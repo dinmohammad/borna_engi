@@ -449,6 +449,84 @@
     <!-- Client Testimonials .END -->
 
 
+    <!-- Video Section START -->
+    <section class="video-wrapper position-relative overflow-hidden">
+        <div class="video-header-wrapper section-padding-tb-70 theme-bg-primary">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12 col-md-12">
+                        <div class="d-flex flex-wrap justify-content-between align-items-center gap-3">
+                            <div class="section-heading w-50">
+                                <h2 class="text-white">Have a look</h2>
+                                <p class="m-0 text-white"> 
+                                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin sodales ultrices nulla blandit volutpat.
+                                </p>
+                            </div>
+                            <button class="theme-white-solid-button mt-4">View All</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="video-content-wrapper section-content-top-margin">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="swiper video_slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide youtube-thumbnail position-relative" data-bs-toggle="modal" data-bs-target="#youtubeModal" data-id="43uo7FRDHDI">
+                                    <img class=" object-fit-cover" src="https://img.youtube.com/vi/43uo7FRDHDI/hqdefault.jpg" width="100%" alt="YouTube Thumbnail">
+                                    <div class="play-button">
+                                        <img class="video-thumbnail" src="{{ asset('assets/images/icons/play.png')}}" width="60" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide youtube-thumbnail position-relative" data-bs-toggle="modal" data-bs-target="#youtubeModal" data-id="JvdU0kN9swk">
+                                    <img class=" object-fit-cover" src="https://img.youtube.com/vi/JvdU0kN9swk/hqdefault.jpg" width="100%" alt="YouTube Thumbnail">
+                                    <div class="play-button">
+                                        <img src="{{ asset('assets/images/icons/play.png')}}" width="60" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide youtube-thumbnail position-relative" data-bs-toggle="modal" data-bs-target="#youtubeModal" data-id="i163RsDQIvc">
+                                    <img class=" object-fit-cover" src="https://img.youtube.com/vi/i163RsDQIvc/hqdefault.jpg" width="100%" alt="YouTube Thumbnail">
+                                    <div class="play-button">
+                                        <img src="{{ asset('assets/images/icons/play.png')}}" width="60" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide youtube-thumbnail position-relative" data-bs-toggle="modal" data-bs-target="#youtubeModal" data-id="NEMr3DvJ5No">
+                                    <img class=" object-fit-cover" src="https://img.youtube.com/vi/NEMr3DvJ5No/hqdefault.jpg" width="100%" alt="YouTube Thumbnail">
+                                    <span class="play-button">
+                                        <img src="{{ asset('assets/images/icons/play.png')}}" width="60" alt="">
+                                    </span>
+                                </div>
+                            </div>
+                            <!-- Navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Bootstrap Modal -->
+    <div class="modal fade" id="youtubeModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-black">
+            <div class="modal-header border-0">
+                <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-0">
+                <div class="ratio ratio-16x9">
+                    <iframe id="youtubeIframe" src="" title="YouTube video" allowfullscreen allow="autoplay; encrypted-media"></iframe>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Video .END -->
+
+
     
     
 
