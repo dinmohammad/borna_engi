@@ -332,6 +332,65 @@
     </section>
     <!-- CEO .END -->
 
+    <!-- Our Service Section START -->
+    <section class="our-service-wrapper position-relative overflow-hidden section-padding-tb-70 theme-bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 col-md-12">
+                    <div class="d-flex flex-wrap justify-content-between align-items-center gap-3">
+                        <div class="section-heading">
+                            <h2 class="text-white">Our Services</h2>
+                            <p class="m-0 text-white"> 
+                                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere <br>
+                                cubilia curae; Proin sodales ultrices nulla blandit volutpat.
+                            </p>
+                        </div>
+                        <button class="theme-white-solid-button mt-4">View All</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="section-content section-content-top-margin">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                        <div class="single-item-box-two active p-3">
+                            <img src="{{ asset('assets/images/icons/Architectural_White.svg') }}" width="60" heigth="60" alt="borna engineering product ">
+                            <h6 class="text-white mt-3">Architectural Design</h6>
+                            <p class="text-white mt-4">The planning of your project starts here. Working together with you</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                        <div class="single-item-box-two p-3">
+                            <img src="{{ asset('assets/images/icons/3D_Visualization.svg') }}" width="60" heigth="60" alt="borna engineering product ">
+                            <h6 class="text-white mt-3">Architectural Design</h6>
+                            <p class="text-white mt-4">The planning of your project starts here. Working together with you</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                        <div class="single-item-box-two p-3">
+                            <img src="{{ asset('assets/images/icons/Structural_design.svg') }}" width="60" heigth="60" alt="borna engineering product ">
+                            <h6 class="text-white mt-3">Architectural Design</h6>
+                            <p class="text-white mt-4">The planning of your project starts here. Working together with you</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                        <div class="single-item-box-two p-3">
+                            <img src="{{ asset('assets/images/icons/Free_marketing.svg') }}" width="60" heigth="60" alt="borna engineering product ">
+                            <h6 class="text-white mt-3">Architectural Design</h6>
+                            <p class="text-white mt-4">The planning of your project starts here. Working together with you</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Our Service .END -->
+
+
+    
+    
+
 
 
 
@@ -353,4 +412,9 @@
 
 
 </div>
+@endsection
+
+
+@section('scripts')
+
 @endsection

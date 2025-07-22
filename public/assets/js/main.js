@@ -84,3 +84,9 @@ $('.counter').each(function () {
         }
     });
 });
+
+$('.single-item-box-two').on('mouseenter', function () {
+    $('.single-item-box-two').removeClass('active'); // remove from all
+    $(this).addClass('active'); // add to hovered
+});
+
