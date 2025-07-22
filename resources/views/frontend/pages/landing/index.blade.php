@@ -257,6 +257,65 @@
     </section>
     <!-- Success Project .END -->
 
+    <!-- Why Choose Section START -->
+    <section class="why-choose-wrapper position-relative overflow-hidden section-padding-tb-70">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- left -->
+                <div class="col-xl-6 col-md-6 col-12">
+                    <div class="why-choose-image">
+                        <div class="swiper why_choose_slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide single-why-choose-image">
+                                    <img src="{{ asset('assets/images/start_product/star_1.png') }}" width="100%" heigth="100%" alt="borna engineering product ">
+                                </div>
+                                <div class="swiper-slide single-why-choose-image">
+                                    <img src="{{ asset('assets/images/start_product/star_1.png') }}" width="100%" heigth="100%" alt="borna engineering product ">
+                                </div>
+                                <div class="swiper-slide single-why-choose-image">
+                                    <img src="{{ asset('assets/images/start_product/star_1.png') }}" width="100%" heigth="100%" alt="borna engineering product ">
+                                </div>
+                            </div>
+                            <!-- Navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- right -->
+                <div class="col-xl-6 col-md-6 col-12">
+                    <div class="why-choose-text">
+                        <div class="section-heading">
+                            <h2>Why Choose Us</h2>
+                            <p class="m-0"> 
+                                One of the most significant advantages of living in a residential complex is the availability
+                                of various amenities that are not typically found in traditional residential properties.
+                                These amenities may include swimming pools, fitness centers, playgrounds, community gardens,
+                                and more. Such facilities can offer an enhanced quality of life for residents, making it easier
+                                to stay active, socialize and pursue hobbies.
+                            </p>
+                            <button class="theme-primary-solid-button mt-4">Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Why Choose .END -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

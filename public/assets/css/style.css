@@ -44,8 +44,8 @@ a{
 
 .section-heading p {
     font-size: 18px;
-    font-weight: 700;
-    line-height: 27px;
+    font-weight: 400;
+    line-height: 28px;
     color: #7B7B7B;
 }
 /* ========= Section Common Css END ======== */
@@ -234,6 +234,23 @@ a{
     color: #7B7B7B;
 }
 /* ========= Success project count Css END ======== */
+
+
+/* ========= Why Choose Css Start ======== */
+.why-choose-text {
+    padding-left: 100px;
+}
+/* ========= Why Choose Css END ======== */
+
+
+
+
+
+
+
+
+
+
 
 
 
