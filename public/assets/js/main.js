@@ -52,3 +52,21 @@ $('.select2').select2({
     allowClear: true,
     width: 'resolve'
 });
+
+
+$('.counter').each(function () {
+    var $this = $(this);
+    var target = +$this.attr('data-target');
+    var count = 0;
+
+    $({ countNum: $this.text() }).animate({ countNum: target }, {
+        duration: 2000,
+        easing: 'swing',
+        step: function () {
+        $this.text(Math.floor(this.countNum));
+        },
+        complete: function () {
+        $this.text(this.countNum + (target > 100 ? "+" : ""));
+        }
+    });
+});

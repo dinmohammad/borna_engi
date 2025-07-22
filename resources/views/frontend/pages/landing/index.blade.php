@@ -85,7 +85,7 @@
     <!-- Banner .END -->
 
     <!-- Highlight Product Section START -->
-    <section class="hightlight-product-wrapper position-relative overflow-hidden section-padding-tb-70">
+    <section class="highlight-product-wrapper position-relative overflow-hidden section-padding-tb-70">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12 col-md-12">
@@ -207,11 +207,61 @@
     </section>
     <!-- Highlight Product .END -->
 
+    <!-- Success Project Section START -->
+    <section class="success-project-wrapper position-relative overflow-hidden section-padding-tb-70">
+        <div class="container py-5">
+            <div class="row">
+                <!-- Counters -->
+                <div class="col-md-6">
+                   <div class="project-count-wrap">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="counter-box">
+                                    <div class="counter" data-target="64">0</div>
+                                    <div class="description">Districts Completed</div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="counter-box">
+                                    <div class="counter" data-target="1100">0</div>
+                                    <div class="description">Project Complete</div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="counter-box mt-5">
+                                    <div class="counter" data-target="11">0</div>
+                                    <div class="description">Finished Projects</div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="counter-box mt-5">
+                                    <div class="counter" data-target="1205">0</div>
+                                    <div class="description">Happy Clients</div>
+                                </div>
+                            </div>
+
+                        </div>
+                   </div>
+                </div>
+
+                <!-- Text and CTA -->
+                <div class="col-md-6 ">
+                    <div class="section-heading">
+                        <h2>We use Real Estate to show our appreciation of the world.</h2>
+                        <p class="m-0">We provide equity and debt capital globally to back projects that make an impact.</p>
+                        <button class="theme-primary-solid-button mt-4">Know More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Success Project .END -->
+
 
 
 
     <!-- Banner Section START -->
-    <!-- Banne .END -->
+    <!-- Banner .END -->
 
 
 </div>

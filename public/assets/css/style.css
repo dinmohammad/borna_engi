@@ -220,7 +220,20 @@ a{
 /* ========= Highlight Product Css END ======== */
 
 
-
+/* ========= Success project count Css Start ======== */
+.counter-box .counter{
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 60px;
+    color: #0B0D4E;
+}
+.counter-box .description{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    color: #7B7B7B;
+}
+/* ========= Success project count Css END ======== */
 
 
 
