@@ -523,8 +523,45 @@
             </div>
         </div>
     </div>
-
     <!-- Video .END -->
+
+    <!-- Gallary Section START -->
+    <section class="Gallary-wrapper position-relative overflow-hidden section-padding-tb-70">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 col-md-12">
+                    <div class="d-flex flex-wrap justify-content-between align-items-center gap-3">
+                        <div class="section-heading w-50">
+                            <h2>Gallary</h2>
+                        </div>
+                        <button class="theme-primary-solid-button mt-4">View All</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-content section-content-top-margin">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="swiper gallary_slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="{{ asset('assets/images/gallary/gallary-1.png')}}" width="100%" height="100%" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="{{ asset('assets/images/gallary/gallary-1.png')}}" width="100%" height="100%" alt="">
+                                </div>
+                                
+                            </div>
+                            <!-- Navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Gallary .END -->
 
 
     
