@@ -584,6 +584,91 @@
     </section>
     <!-- Find  Best Place .END -->
 
+    <!-- Faq Section START -->
+    <section class="faq-wrapper position-relative overflow-hidden section-padding-tb-70">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-md-6 col-sm-6 col-12">
+                    <div class="section-heading">
+                        <h2>Frequently Asked <br> Questions</h2>
+                        <p class="m-0"> 
+                            If there are question you want to ask. We will answer all your question.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-6 col-12">
+                    <div class="faq-content">
+                        <div class="accordion" id="faqAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                    What is cluster housing perumnas?
+                                </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Cluster housing perumnas is a housing concept that consists of several houses in a gated cluster. It offers comfortable, secure, and affordable housing with various complete and modern facilities.
+                                </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                    Where is the location of cluster housing perumnas?
+                                </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Cluster housing perumnas is located in several areas across the region, accessible from key routes.
+                                </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                                    How much are the prices and types of houses in cluster housing perumnas?
+                                </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    The prices and types vary depending on the location and house design. Please contact us for detailed pricing.
+                                </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                                    What are the facilities provided in cluster housing perumnas?
+                                </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Facilities include 24/7 security, playgrounds, parks, community centers, and more.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Faq .END -->
+
+    <!-- Google Map Section START -->
+    <div class="map-wrapper position-relative overflow-hidden section-padding-b-70">
+        <div class="map-wrap">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3649.442630200101!2d90.36366927760893!3d23.838411167213753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c41ee8676671%3A0x4757925381b5f338!2sBorna%20Engineering!5e0!3m2!1sen!2sbd!4v1753293637169!5m2!1sen!2sbd" 
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+        </div>
+    </div>
+    <!-- Google Map .END -->
+
 
     
     

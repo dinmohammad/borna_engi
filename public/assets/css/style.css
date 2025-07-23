@@ -40,7 +40,12 @@ a{
     padding-top: 70px;
     padding-bottom: 70px;
 }
-
+.section-padding-t-70{
+    padding-top: 70px;
+}
+.section-padding-b-70{
+    padding-bottom: 70px;
+}
 .section-content-top-margin{
     margin-top: 50px;
 }
@@ -380,8 +385,43 @@ a{
 }
 /* ========= Find Best place Css END ======== */
 
+/* ========= Faq Css Start ======== */
+.faq-content .accordion-button::after {
+    background-image: none;
+    content: "+";
+    font-size: 1.5rem;
+    line-height: 1;
+}
 
+.faq-content .accordion-button.collapsed::after {
+    content: "+";
+    background-image: none !important;
+    /* font-size: 30px;
+    margin-top: -16px; */
+}
 
+.faq-content .accordion-button:not(.collapsed)::after {
+    content: "−";
+    background-image: none !important;
+    /* font-size: 30px;
+    margin-top: -16px; */
+}
+
+.faq-content .accordion-button {
+    font-size: 24px;
+    font-weight: 500 !important;
+    line-height: 32px;
+    background: transparent !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+}
+
+.faq-content .accordion-item {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+/* ========= Faq Css END ======== */
 
 
 
