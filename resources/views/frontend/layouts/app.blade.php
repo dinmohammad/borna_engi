@@ -15,7 +15,7 @@
        <meta property="og:image:width" content="1200" />
        <meta property="og:image:height" content="630" />
        <meta name="brand_name" content="" />
-       <link rel="icon" type="image/png" href="{{ asset('favicon.png') }}" />
+       <!-- <link rel="icon" type="image/png" href="{{ asset('favicon.png') }}" /> -->
        <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet" />
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
@@ -32,18 +32,10 @@
 
         <main>
             <!-- Preloader -->
-            <!-- <div class="preloader-activate preloader-active open_tm_preloader">
-                <div class="preloader-area-wrap">
-                    <div class="spinner d-flex justify-content-center align-items-center h-100">
-                        <div class="bounce1"></div>
-                        <div class="bounce2"></div>
-                        <div class="bounce3"></div>
-                    </div>
-                </div>
-            </div> -->
+
             <!--/Preloader -->
 
-            <div class="cd-index cd-main-content" style="opacity: 0; transition: opacity 0.5s ease;">
+            <div class="cd-index cd-main-content" >
                 <!-- Page Content -->
                 <div id="page-content" class="light-content" data-bgcolor="#171717">
                     <!-- Header -->

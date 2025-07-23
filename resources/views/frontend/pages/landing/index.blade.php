@@ -563,6 +563,27 @@
     </section>
     <!-- Gallary .END -->
 
+    <!-- Find  Best Place Section START -->'
+    <section class="find-best-place-wrapper position-relative overflow-hidden section-padding-tb-70">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="find-best-content-wrap text-center my-5">
+                        <div class="section-heading w-50 mx-auto">
+                            <h2 class="text-white">Find Best Place For Living</h2>
+                            <p class="m-0 text-white"> 
+                                Spend vacations in best hotels and resorts find the great place of your
+                                choice using different searching options.
+                            </p>
+                            <button class="theme-white-solid-button mt-4">Contact Us</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Find  Best Place .END -->
+
 
     
     
