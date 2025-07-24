@@ -77,11 +77,11 @@ var swiper = new Swiper(".video_slider", {
         576: {
             slidesPerView: 1,
         },
-        768: {
-            slidesPerView: 2,
+        991: {
+            slidesPerView: 1,
         },
-        992: {
-            slidesPerView: 3,
+        1100: {
+            slidesPerView: 2,
         },
         1200: {
             slidesPerView: 3,
@@ -116,8 +116,8 @@ var swiper = new Swiper(".product_slider", {
         768: {
             slidesPerView: 3,
         },
-        992: {
-            slidesPerView: 4,
+        1100: {
+            slidesPerView: 3,
         },
         1200: {
             slidesPerView: 4,

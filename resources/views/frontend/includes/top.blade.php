@@ -4,7 +4,7 @@
             <div class="col-xl-6 col-md-6 col-12">
                 <ul class="social-media-link p-0 list-unstyled m-0">
                     <li>
-                        <a href="mailto:" class="d-flex align-content-center gap-2">
+                        <a href="mailto:" class="d-flex align-content-center gap-2 top-h-mail">
                             <i class="fa fa-envelope-o" aria-hidden="true"></i>
                             <span><strong>Email us at</strong> : example@mail.com</span>
                         </a>
@@ -12,7 +12,7 @@
                 </ul>
             </div>
             <div class="col-xl-6 col-md-6 col-12">
-                <div class="d-flex flex-wrap align-items-center justify-content-end gap-3">
+                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-end gap-3">
                     <ul class="social-media-link p-0 list-unstyled d-flex m-0 gap-4 py-2">
                         <li>
                             <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>

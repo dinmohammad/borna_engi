@@ -12,7 +12,7 @@
                     </a>
 
                     <!-- Toggler for mobile -->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
@@ -45,4 +45,38 @@
         </header>
 
     </Header>
+</div>
+
+
+
+<div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+    <div class="offcanvas-header bg-white">
+        <a class="navbar-brand" href="#">
+            <img src="{{ asset('assets/images/Logo.png') }}" alt="borno engineering logo" width="136" height="100%">
+        </a>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>  
+    </div>
+  <div class="offcanvas-body mobile-nav-body">
+    <ul class=" list-unstyled p-0">
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Our Service</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Properties</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Gallery</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Contact Us
+            </a>
+        </li>
+    </ul>
+  </div>
 </div>
