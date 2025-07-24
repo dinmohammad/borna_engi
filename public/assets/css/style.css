@@ -551,6 +551,40 @@ select.form-control{
 /* ========= Breadcrumb Css END ======== */
 
 
+/* ========= Company Target Css Start ======== */
+.company-tw-left #experience_year {
+    font-size: 180px;
+    line-height: .8;
+    font-weight: 900;
+    margin: 0 5px -5px -5px;
+    color: #0B0D4E;
+}
+
+.company-tw-left .heading.me-5 {
+    position: relative;
+    font-size: 12px;
+    line-height: 2em;
+    letter-spacing: 2px;
+    color: #ababab;
+    text-transform: uppercase;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+}
+.company-tw-right p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #7B7B7B;
+}
+/* ========= Company Target Css END ======== */
+
+
 
 
 /* ========= Global Css Start ======== */

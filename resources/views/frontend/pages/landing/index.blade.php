@@ -657,18 +657,6 @@
     </section>
     <!-- Faq .END -->
 
-    <!-- Google Map Section START -->
-    <div class="map-wrapper position-relative overflow-hidden section-padding-t-70">
-        <div class="map-wrap">
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3649.442630200101!2d90.36366927760893!3d23.838411167213753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c41ee8676671%3A0x4757925381b5f338!2sBorna%20Engineering!5e0!3m2!1sen!2sbd!4v1753293637169!5m2!1sen!2sbd" 
-                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-        </div>
-    </div>
-    <!-- Google Map .END -->
-
     <!-- Banner Section START -->
     <!-- Banner .END -->
 

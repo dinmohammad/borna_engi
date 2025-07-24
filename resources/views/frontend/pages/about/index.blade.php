@@ -85,7 +85,34 @@
     </section>
     <!-- cound down .END -->
     
-    <!-- Banner Section START -->
-    <!-- Banner .END -->
+    <!-- Company Terget Section START -->
+    <section class="company-target-wrapper position-relative overflow-hidden section-padding-t-70">
+        <div class="container">
+            <div class="row align-items-center ">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-12">
+                    <div class="company-tw-left">
+                        <h2 class="heading  me-5">
+                            <span class="mark-text" id="experience_year">08</span>
+                            Years’ <br> Experience <br> in IT
+                        </h2>
+                        <h5 class="heading mt-4"><strong>Learn more about our Success Stories</strong></h5>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-12 col-12">
+                    <div class="company-tw-right">
+                        <h5><strong>Mission</strong></h5>
+                        <p>Cluster housing perumnas is located in an area that is easily accessible from various directions. You can reach the city center, airport, train station, bus terminal, and other important places easily and quickly.</p>
+                        
+                        <h5><strong>Vission</strong></h5>
+                        <p>Cluster housing perumnas has a modern and elegant house design. You can choose the type of house that suits your taste and needs, ranging from type 36 to type 120. </p>
+                        
+                        <h5><strong>Goal</strong></h5>
+                        <p>Cluster housing perumnas has an integrated security system. Each cluster is equipped with a fence, gate, and guard post that are monitored by professional security officers. In addition, each house is also equipped with a fire alarm and CCTV.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Company Terget .END -->
 </div>
 @endsection
