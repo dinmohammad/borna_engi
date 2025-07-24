@@ -77,8 +77,8 @@ var swiper = new Swiper(".video_slider", {
         576: {
             slidesPerView: 1,
         },
-        768: {
-            slidesPerView: 2,
+        991: {
+            slidesPerView: 1,
         },
         1100: {
             slidesPerView: 2,

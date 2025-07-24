@@ -43,7 +43,7 @@
         </div>
 
         <div class="hero-filter-content position-absolute bottom-0 pb-5 w-100 text-center z-1" id="hero_filter_content">
-            <div class="bg-white p-3 p-md-4 rounded shadow d-flex flex-column flex-md-row align-items-center w-100 mx-auto gap-4" style="max-width: 1096px;">
+            <div class="bg-white p-4 p-md-4 rounded shadow d-block d-md-flex flex-column flex-md-row align-items-center w-100 mx-auto gap-4" style="max-width: 1096px;">
 
                 <!-- Residential Dropdown -->
                 <div class="hero-single-input flex-fill">
@@ -85,7 +85,7 @@
     <!-- Banner .END -->
 
     <!-- Highlight Product Section START -->
-    <section class="highlight-product-wrapper position-relative overflow-hidden section-padding-tb-70">
+    <section class="highlight-product-wrapper position-relative overflow-hidden section-padding-tb-70" id="highlight_product_wrapper">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12 col-md-12">
@@ -260,7 +260,7 @@
     <!-- Why Choose Section START -->
     <section class="why-choose-wrapper position-relative overflow-hidden section-padding-tb-70">
         <div class="container">
-            <div class="row align-items-center flex-md-column-reverse">
+            <div class="row align-items-center flex-column-reverse flex-lg-row">
                 <!-- left -->
                 <div class="col-xl-6 col-lg-6 col-md-12 col-12">
                     <div class="why-choose-image">
@@ -333,11 +333,11 @@
     <!-- CEO .END -->
 
     <!-- Our Service Section START -->
-    <section class="our-service-wrapper position-relative overflow-hidden section-padding-tb-70 theme-bg-primary">
+    <section class="our-service-wrapper position-relative overflow-hidden section-padding-tb-70 theme-bg-primary" id="our_service_wrapper">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12 col-md-12">
-                    <div class="d-flex flex-wrap justify-content-between align-items-center gap-3">
+                    <div class="d-block text-center text-md-start d-md-flex flex-wrap justify-content-between align-items-center gap-3">
                         <div class="section-heading w-50">
                             <h2 class="text-white">Our Services</h2>
                             <p class="m-0 text-white"> 
@@ -388,11 +388,11 @@
     <!-- Our Service .END -->
 
     <!-- Client Testimonials Section START -->
-    <section class="client-testimonials-wrapper position-relative overflow-hidden section-padding-tb-70 theme-bg-primary">
+    <section class="client-testimonials-wrapper position-relative overflow-hidden section-padding-tb-70 theme-bg-primary" id="client_testimonials_wrapper">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12 col-md-12">
-                    <div class="d-flex flex-wrap justify-content-between align-items-center gap-3">
+                    <div class="d-block text-center text-md-start d-md-flex flex-wrap justify-content-between align-items-center gap-3">
                         <div class="section-heading w-50">
                             <h2 class="text-white">Client Testimonials</h2>
                             <p class="m-0 text-white"> 
@@ -408,9 +408,9 @@
             <div class="section-content section-content-top-margin">
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="swiper client_testimonials_slider">
+                        <div class="swiper client_testimonials_slider" id="client_testimonials_slider">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide single-testi-image d-flex align-items-start gap-3">
+                                <div class="swiper-slide single-test-image d-block d-md-flex align-items-start gap-3">
                                     <div class="swci-text position-relative bg-white p-5">
                                         <p>I uploaded my floor plans, chose stunning furniture and decor, and within minutes, I had photorealistic renderings that showcased the potential of the remodeled space.</p>
 
@@ -423,7 +423,7 @@
                                     </div>
                                     <img class="object-fit-cover" src="{{ asset('assets/images/testimonials/client-1.png') }}" height="286" width="286"  alt="borna engineering product ">
                                 </div>
-                                <div class="swiper-slide single-testi-image d-flex align-items-start gap-3">
+                                <div class="swiper-slide single-test-image d-block d-md-flex align-items-start gap-3">
                                     <div class="swci-text position-relative bg-white p-5">
                                         <p>I uploaded my floor plans, chose stunning furniture and decor, and within minutes, I had photorealistic renderings that showcased the potential of the remodeled space.</p>
 
@@ -451,11 +451,11 @@
 
     <!-- Video Section START -->
     <section class="video-wrapper position-relative overflow-hidden">
-        <div class="video-header-wrapper section-padding-tb-70 theme-bg-primary">
+        <div class="video-header-wrapper section-padding-tb-70 theme-bg-primary" id="video_header_wrapper">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-12 col-md-12">
-                        <div class="d-flex flex-wrap justify-content-between align-items-center gap-3">
+                        <div class="d-block text-center text-md-start d-md-flex flex-wrap justify-content-between align-items-center gap-3">
                             <div class="section-heading w-50">
                                 <h2 class="text-white">Have a look</h2>
                                 <p class="m-0 text-white"> 
@@ -468,7 +468,7 @@
                 </div>
             </div>
         </div>
-        <div class="video-content-wrapper section-content-top-margin">
+        <div class="video-content-wrapper section-content-top-margin" id="video_content_wrapper">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -526,11 +526,11 @@
     <!-- Video .END -->
 
     <!-- Gallary Section START -->
-    <section class="Gallary-wrapper position-relative overflow-hidden section-padding-tb-70">
+    <section class="gallary-wrapper position-relative overflow-hidden section-padding-tb-70" id="gallary_wrapper">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12 col-md-12">
-                    <div class="d-flex flex-wrap justify-content-between align-items-center gap-3">
+                    <div class="d-block text-center text-md-start d-md-flex flex-wrap justify-content-between align-items-center gap-3">
                         <div class="section-heading w-50">
                             <h2>Gallary</h2>
                         </div>
@@ -588,7 +588,7 @@
     <section class="faq-wrapper position-relative overflow-hidden section-padding-tb-70">
         <div class="container">
             <div class="row">
-                <div class="col-xl-6 col-md-6 col-sm-6 col-12">
+                <div class="col-xl-6 col-md-6 col-sm-12 col-12">
                     <div class="section-heading">
                         <h2>Frequently Asked <br> Questions</h2>
                         <p class="m-0"> 
@@ -596,7 +596,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-xl-6 col-md-6 col-sm-6 col-12">
+                <div class="col-xl-6 col-md-6 col-sm-12 col-12">
                     <div class="faq-content">
                         <div class="accordion" id="faqAccordion">
                             <div class="accordion-item">
