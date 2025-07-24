@@ -584,7 +584,11 @@ select.form-control{
 }
 /* ========= Company Target Css END ======== */
 
-
+/* ========= all propertices Css Start ======== */
+.all-propertices-wrapper .single-item-box {
+    margin-bottom: 75px !important;
+}
+/* ========= all propertices Css END ======== */
 
 
 /* ========= Global Css Start ======== */
