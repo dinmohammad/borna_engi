@@ -1,5 +1,8 @@
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+    .contact-us-wrapper .single-box-item-three{
+        margin-bottom: 20px;
+    }
     .bottom-footer-menu {
         margin-top: 15px;
         justify-content: center ! IMPORTANT;

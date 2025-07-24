@@ -25,24 +25,24 @@
     <section class="contact-us-wrapper section-padding-t-70">
         <div class="container">
             <div class="row">
-                <div class="col-xl-3 col-md-4 col-sm-6 col-6">
+                <div class="col-xl-3 col-md-4 col-sm-6 col-12">
                     <a href="tel:+" target="_blank">
                         <div class="single-box-item-three position-relative">
-                            <img src="{{ asset('assets/images/contacts/Card_1.png')}}" alt="">
+                            <img src="{{ asset('assets/images/contacts/Card_1.png')}}" alt="" height="306" width="100%">
                             <div class="sbit-hover-text p-3 position-absolute bottom-0 w-100 theme-bg-primary d-flex justify-content-between align-items-center gap-2">
                                 <div>
                                     <h5 class="text-white">Chat to Support</h5>
                                     <p class="p-0 m-0 text-white">Have Questions?  <br> We're Here to Help!</p>
                                 </div>
-                                <img src="{{asset('assets/images/icons/live-chat.png')}}" height="60px" width="60" alt="">
+                                <img src="{{asset('assets/images/icons/live-chat.png')}}" height="60px" width="auto" alt="">
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-xl-3 col-md-4 col-sm-6 col-6">
+                <div class="col-xl-3 col-md-4 col-sm-6 col-12">
                     <a href="https://maps.app.goo.gl/L1iGVLhdW4jrvR9P7" target="_blank">
                         <div class="single-box-item-three position-relative">
-                            <img src="{{ asset('assets/images/contacts/Card_2.png')}}" alt="">
+                            <img src="{{ asset('assets/images/contacts/Card_2.png')}}" alt="" height="306" width="100%">
                             <div class="sbit-hover-text p-3 position-absolute bottom-0 w-100 theme-bg-primary d-flex justify-content-between align-items-center gap-2">
                                 <div>
                                     <h5 class="text-white">Visit us</h5>
@@ -53,10 +53,10 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-xl-3 col-md-4 col-sm-6 col-6">
+                <div class="col-xl-3 col-md-4 col-sm-6 col-12">
                     <a href="mailto:bornaengineering@gmail.com">
                         <div class="single-box-item-three position-relative">
-                            <img src="{{ asset('assets/images/contacts/card_3.png')}}" alt="">
+                            <img src="{{ asset('assets/images/contacts/card_3.png')}}" alt="" height="306" width="100%">
                             <div class="sbit-hover-text p-3 position-absolute bottom-0 w-100 theme-bg-primary d-flex justify-content-between align-items-center gap-2">
                                 <div>
                                     <h5 class="text-white">Mail Send</h5>
@@ -67,10 +67,10 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-xl-3 col-md-4 col-sm-6 col-6">
+                <div class="col-xl-3 col-md-4 col-sm-6 col-12">
                     <a href="tel:+8801763851107">
                         <div class="single-box-item-three position-relative">
-                            <img src="{{ asset('assets/images/contacts/card_4.png')}}" alt="">
+                            <img src="{{ asset('assets/images/contacts/card_4.png')}}" alt="" height="306" width="100%">
                             <div class="sbit-hover-text p-3 position-absolute bottom-0 w-100 theme-bg-primary d-flex justify-content-between align-items-center gap-2">
                                 <div>
                                     <h5 class="text-white">Call Us</h5>
