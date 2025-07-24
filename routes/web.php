@@ -12,6 +12,9 @@ Route::get('/our-service', function () {
 Route::get('/propertice', function () {
     return view('frontend.pages.propertice.index');
 });
+Route::get('/gallary', function () {
+    return view('frontend.pages.gallary.index');
+});
 
 
 Route::get('admin/dashboard', function () {

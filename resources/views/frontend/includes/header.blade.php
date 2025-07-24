@@ -32,7 +32,7 @@
                                 <a class="nav-link" href="{{ url('/propertice') }}">Properties</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ url('/our-service') }}">Gallery</a>
+                                <a class="nav-link" href="{{ url('/gallary') }}">Gallery</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ url('/our-service') }}">Contact Us
@@ -71,7 +71,7 @@
             <a class="nav-link" href="{{ url('/propertice') }}">Properties</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="{{ url('/our-service') }}">Gallery</a>
+            <a class="nav-link" href="{{ url('/gallary') }}">Gallery</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="{{ url('/our-service') }}">Contact Us

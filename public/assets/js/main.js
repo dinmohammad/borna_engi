@@ -166,3 +166,15 @@ $('.youtube-thumbnail').on('click', function () {
 $('#youtubeModal').on('hidden.bs.modal', function () {
     $('#youtubeIframe').attr('src', '');
 });
+
+
+
+window.addEventListener('load', () => {
+    const grid = document.querySelector('.grid');
+    new Masonry(grid, {
+        itemSelector: '.grid-item',
+        columnWidth: 200,
+        gutter: 10,
+        fitWidth: true
+    });
+});
