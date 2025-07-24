@@ -49,6 +49,18 @@ a{
 .section-content-top-margin{
     margin-top: 50px;
 }
+input.form-control,
+textarea.form-control,
+select.form-control{
+    font-size: 16px;
+    line-height: 100%;
+    font-weight: 400;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #F8F8F8;
+    border: none;
+
+}
 /* ========= Global Css END ======== */
 
 
@@ -422,6 +434,53 @@ a{
     margin-bottom: 10px;
 }
 /* ========= Faq Css END ======== */
+
+/* ========= Footer Css Start ======== */
+.footer-wrapper:after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 43.5%;
+    height: 100%;
+    background: #0B0D4E;
+    z-index: -1;
+}
+.f-get-text{
+    font-size: 18px;
+    line-height: 21.6px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #fff;
+}
+.f-p-text{
+    font-size: 18px !important;
+    line-height: 27px !important;
+    font-weight: 400 !important;
+    color: #d0d0d09c !important;
+    opacity: .7;
+}
+.bottom-footer {
+    margin-bottom: 50px;
+}
+.social-links > a {
+    font-size: 18px;
+    line-height: 21.6px !important;
+    font-weight: 5000 !important;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: underline !IMPORTANT;
+}
+.bottom-footer-menu > a {
+    color: #7B7B7B;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 600;
+}
+/* ========= Footer Css END ======== */
+
+
+
 
 
 
