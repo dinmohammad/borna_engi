@@ -50,11 +50,11 @@
 
 
 <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
-    <div class="offcanvas-header">
+    <div class="offcanvas-header bg-white">
         <a class="navbar-brand" href="#">
             <img src="{{ asset('assets/images/Logo.png') }}" alt="borno engineering logo" width="136" height="100%">
         </a>
-        <button type="button" class="btn-close custom-white-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>  
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>  
     </div>
   <div class="offcanvas-body mobile-nav-body">
     <ul class=" list-unstyled p-0">
