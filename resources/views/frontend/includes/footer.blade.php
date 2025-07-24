@@ -63,17 +63,17 @@
             <div class="row">
                 <div class="col-xl-5 col-md-5 col-sm-6 col-12">
                     <div class="social-links d-flex gap-4 justify-content-center align-items-center">
-                        <a href="#">INSTAGRAM</a>
-                        <a href="#">FACEBOOK</a>
-                        <a href="#">TWITTER</a>
+                        <a href="https://www.youtube.com/@BornaEngineering">Youtube</a>
+                        <a href="https://www.facebook.comBornaengineering">FACEBOOK</a>
+                        <a href="#">Linkedin</a>
                     </div>
                 </div>
                 <div class="col-xl-7 col-md-7 col-sm-6 col-12">
                     <div class="bottom-footer-menu d-flex flex-wrap  gap-4 justify-content-md-start justify-content-center">
-                        <a href="#">Home</a>
-                        <a href="#">About Us</a>
-                        <a href="#">Blog</a>
-                        <a href="#">Contact Us</a>
+                        <a href="{{ url('/') }}">Home</a>
+                        <a href="{{ url('/about-us') }}">About Us</a>
+                        <a href="{{ url('/gallary') }}">Gallary</a>
+                        <a href="{{ url('/contact-us') }}">Contact Us</a>
                     </div>
                 </div>
             </div>

@@ -20,22 +20,22 @@
                     <div class="collapse navbar-collapse justify-content-end" id="navbarScroll">
                         <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll " style="--bs-scroll-height: 100px;">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="{{ url('/') }}">Home</a>
+                                <a class="nav-link {{ Request::is('/') ? 'active' : '' }}" aria-current="page" href="{{ url('/') }}">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ url('/about-us') }}">About Us</a>
+                                <a class="nav-link {{ Request::is('about-us') ? 'active' : '' }}" href="{{ url('/about-us') }}">About Us</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ url('/our-service') }}">Our Service</a>
+                                <a class="nav-link {{ Request::is('our-service') ? 'active' : '' }}" href="{{ url('/our-service') }}">Our Service</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ url('/propertice') }}">Properties</a>
+                                <a class="nav-link {{ Request::is('propertice') ? 'active' : '' }}" href="{{ url('/propertice') }}">Properties</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ url('/gallary') }}">Gallery</a>
+                                <a class="nav-link {{ Request::is('gallary') ? 'active' : '' }}" href="{{ url('/gallary') }}">Gallery</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ url('/contact-us') }}">Contact Us
+                                <a class="nav-link {{ Request::is('contact-us') ? 'active' : '' }}" href="{{ url('/contact-us') }}">Contact Us
                                 </a>
                             </li>
                         </ul>

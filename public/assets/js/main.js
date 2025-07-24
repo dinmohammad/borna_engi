@@ -178,3 +178,15 @@ window.addEventListener('load', () => {
         fitWidth: true
     });
 });
+
+
+const currentPath = window.location.pathname;
+$('.nav-link').each(function () {
+    // Get href attribute and compare with current URL path
+    const linkPath = $(this).attr('href');
+
+    if (linkPath === currentPath) {
+        $('.nav-link').removeClass('active');
+        $(this).addClass('active');
+    }
+});

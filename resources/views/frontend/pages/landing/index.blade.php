@@ -345,7 +345,7 @@
                                 cubilia curae; Proin sodales ultrices nulla blandit volutpat.
                             </p>
                         </div>
-                        <a href="" class="theme-white-solid-button mt-4">View All</a>
+                        <a href="" class="theme-white-solid-button mt-4 d-inline-block">View All</a>
                     </div>
                 </div>
             </div>
@@ -585,7 +585,7 @@
     <!-- Find  Best Place .END -->
 
     <!-- Faq Section START -->
-    <section class="faq-wrapper position-relative overflow-hidden section-padding-tb-70">
+    <section class="faq-wrapper position-relative overflow-hidden section-padding-t-70">
         <div class="container">
             <div class="row">
                 <div class="col-xl-6 col-md-6 col-sm-12 col-12">
