@@ -132,6 +132,38 @@ a{
   .header-section li a.nav-link:hover::after {
     width: 100%;
   }
+  .offcanvas {
+      background-color: #0B0D4E !important;
+  }
+
+  /* .offcanvas.offcanvas-start.show {
+      transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+
+  /* .offcanvas.offcanvas-start {
+      transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+  } */ 
+
+  .offcanvas-body.mobile-nav-body ul li a {
+      display: block;
+      color: #ffffff;
+      padding-top: 18px;
+      padding-bottom: 18px;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.5;
+      -webkit-transition: all 0.7scubic -bezier(0.645, 0.045, 0.355, 1);
+      -o-transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+      transition: all 0.7scubic -bezier(0.645, 0.045, 0.355, 1);
+      border-bottom: .5px solid #ffffff54;
+  }
+
+  .offcanvas-body.mobile-nav-body {
+      padding: 0 60px;
+  }
+  .custom-white-close {
+    filter: invert(1) grayscale(100%) brightness(200%);
+    }
 /* ========= Header Css END ======== */
 
 /* ========= Bannder Css Start ======== */

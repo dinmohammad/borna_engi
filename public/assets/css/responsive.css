@@ -107,6 +107,10 @@
     .faq-content{
         margin-top: 40px;
     }
+    .navbar-toggler:focus{
+        outline: none !important;
+        box-shadow: none !important;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
