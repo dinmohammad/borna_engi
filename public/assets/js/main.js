@@ -190,3 +190,16 @@ $('.nav-link').each(function () {
         $(this).addClass('active');
     }
 });
+
+
+// Header sticky
+var header = $(".header-section");
+var stickyClass = "is-sticky";
+
+$(window).on("scroll", function () {
+    if ($(this).scrollTop() > 100) {
+        header.addClass(stickyClass);
+    } else {
+        header.removeClass(stickyClass);
+    }
+});

@@ -88,6 +88,36 @@ select.form-control{
 /* ========= Section Common Css END ======== */
 
 /* ========= Header Css Start ======== */
+.header-section.is-sticky {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    animation: slideDown .5s ease-out;
+    z-index: 999;
+    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff !important;
+    margin-top: 0 !important;
+}
+.header-section.is-sticky li a.nav-link{
+    color: #000 !important;
+}
+.header-section.is-sticky li a.nav-link.active {
+    background: #0b0d4e25 !important;
+}
+.header-section.is-sticky li a.nav-link.active::after{
+    background-color: #0B0D4E !important;
+}
+.header-section.is-sticky li a.nav-link::after{
+    background-color: #0B0D4E !important;
+}
+.header-section.is-sticky nav.navbar.navbar-expand-lg.bg-transparent {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.header-section.is-sticky .navbar-brand img {
+    width: 115px;
+}
 .top-bar-wrapper {
     border-bottom: 0.5px solid #DBDFEC;
 }
