@@ -42,7 +42,7 @@
             <div class="swiper-pagination"></div>
         </div>
 
-        <div class="hero-filter-content position-absolute bottom-0 pb-5 w-100 text-center z-1">
+        <div class="hero-filter-content position-absolute bottom-0 pb-5 w-100 text-center z-1" id="hero_filter_content">
             <div class="bg-white p-3 p-md-4 rounded shadow d-flex flex-column flex-md-row align-items-center w-100 mx-auto gap-4" style="max-width: 1096px;">
 
                 <!-- Residential Dropdown -->
@@ -209,32 +209,32 @@
 
     <!-- Success Project Section START -->
     <section class="success-project-wrapper position-relative overflow-hidden section-padding-tb-70">
-        <div class="container py-5">
+        <div class="container py-0 py-lg-5">
             <div class="row">
                 <!-- Counters -->
-                <div class="col-md-6">
+                <div class="col-xl-6 col-lg-6 col-md-12">
                    <div class="project-count-wrap">
                         <div class="row">
-                            <div class="col-6">
+                            <div class="col-lg-6 col-md-3 col-sm-6 col-6">
                                 <div class="counter-box">
                                     <div class="counter" data-target="64">0</div>
                                     <div class="description">Districts Completed</div>
                                 </div>
                             </div>
-                            <div class="col-6">
+                            <div class="col-lg-6 col-md-3 col-sm-6 col-6">
                                 <div class="counter-box">
                                     <div class="counter" data-target="1100">0</div>
                                     <div class="description">Project Complete</div>
                                 </div>
                             </div>
-                            <div class="col-6">
-                                <div class="counter-box mt-5">
+                            <div class="col-lg-6 col-md-3 col-sm-6 col-6">
+                                <div class="counter-box mt-0 mt-lg-5">
                                     <div class="counter" data-target="11">0</div>
                                     <div class="description">Finished Projects</div>
                                 </div>
                             </div>
-                            <div class="col-6">
-                                <div class="counter-box mt-5">
+                            <div class="col-lg-6 col-md-3 col-sm-6 col-6">
+                                <div class="counter-box mt-0 mt-lg-5">
                                     <div class="counter" data-target="1205">0</div>
                                     <div class="description">Happy Clients</div>
                                 </div>
@@ -245,7 +245,7 @@
                 </div>
 
                 <!-- Text and CTA -->
-                <div class="col-md-6 ">
+                <div class="col-xl-6 col-lg-6 col-md-12 ">
                     <div class="section-heading">
                         <h2>We use Real Estate to show our appreciation of the world.</h2>
                         <p class="m-0">We provide equity and debt capital globally to back projects that make an impact.</p>
@@ -260,9 +260,9 @@
     <!-- Why Choose Section START -->
     <section class="why-choose-wrapper position-relative overflow-hidden section-padding-tb-70">
         <div class="container">
-            <div class="row align-items-center">
+            <div class="row align-items-center flex-md-column-reverse">
                 <!-- left -->
-                <div class="col-xl-6 col-md-6 col-12">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-12">
                     <div class="why-choose-image">
                         <div class="swiper why_choose_slider">
                             <div class="swiper-wrapper">
@@ -283,7 +283,7 @@
                     </div>
                 </div>
                 <!-- right -->
-                <div class="col-xl-6 col-md-6 col-12">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-12">
                     <div class="why-choose-text">
                         <div class="section-heading">
                             <h2>Why Choose Us</h2>
@@ -308,7 +308,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <!-- left -->
-                <div class="col-xl-6 col-md-6 col-12">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-12">
                     <div class="ceo-text">
                         <div class="section-heading">
                             <h2>Borna Engineering is an Architectural based Engineering firm</h2>
@@ -322,7 +322,7 @@
                     </div>
                 </div>
                 <!-- right -->
-                <div class="col-xl-6 col-md-6 col-12">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-12">
                     <div class="ceo-image position-relative">
                         <img src="{{ asset('assets/images/ceo.png') }}" width="100%" heigth="100%" alt="borna engineering product ">
                     </div>
@@ -564,7 +564,7 @@
     <!-- Gallary .END -->
 
     <!-- Find  Best Place Section START -->'
-    <section class="find-best-place-wrapper position-relative overflow-hidden section-padding-tb-70">
+    <section class="find-best-place-wrapper position-relative overflow-hidden section-padding-tb-70" id="find_best_place_wrapper">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">

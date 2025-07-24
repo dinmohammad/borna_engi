@@ -1,0 +1,85 @@
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  /* Your mobile styles here */
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* Your small device styles here */
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #banner_swiper .swiper-slide img {
+        height: 600px !important;
+    }
+    .counter-box .counter {
+        font-size: 36px;
+    }
+    .counter-box .description {
+        font-size: 16px;
+    }
+    .project-count-wrap {
+        margin-bottom: 40px;
+    }
+    .counter-box {
+        text-align: center;
+    }
+    .section-padding-tb-70 {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .section-content-top-margin {
+        margin-top: 30px;
+    }
+    .why-choose-text {
+        padding-left: 0 !important;
+    }
+    .why-choose-image,
+    .ceo-image{
+        margin-top: 40px;
+    }
+    .ceo-info-wrapper {
+        padding-bottom: 70px;
+    }
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    #banner_swiper .swiper-slide img {
+        height: 630px !important;
+    }
+    .why-choose-text {
+        padding-left: 25px !important;
+    }
+    #find_best_place_wrapper .section-heading{
+        width: 100% !important;
+    }
+    .section-padding-tb-70 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .section-content-top-margin {
+        margin-top: 40px;
+    }
+}
+@media (max-width: 1199.98px) {
+    #hero_filter_content{
+        width: 80% !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    #banner_swiper .swiper-slide img {
+        height: 800px !important;
+    }
+}
+
+/* Extra extra large devices (very large screens, TVs, 1400px and up) */
+@media (min-width: 1400px) {
+  /* Your very large screen styles here */
+}
