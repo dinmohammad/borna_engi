@@ -22,7 +22,7 @@
     <!-- Page Breadcrumb .END -->
 
     <!-- all propertices Section START -->
-    <section class="all-propertices-wrapper position-relative overflow-hidden section-padding-tb-70">
+    <section class="all-propertices-wrapper position-relative overflow-hidden section-padding-t-70">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12 col-md-12">

@@ -22,7 +22,7 @@
     <!-- Page Breadcrumb .END -->
 
     <!-- All Services Section START -->
-    <section class="all-services-wrapper position-relative overflow-hidden section-padding-tb-70">
+    <section class="all-services-wrapper position-relative overflow-hidden section-padding-t-70">
         <div class="container">
             <div class="row">
                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">

@@ -69,7 +69,7 @@
                     </div>
                 </div>
                 <div class="col-xl-7 col-md-7 col-sm-6 col-12">
-                    <div class="bottom-footer-menu d-flex flex-wrap  gap-4 justify-content-start">
+                    <div class="bottom-footer-menu d-flex flex-wrap  gap-4 justify-content-md-start justify-content-center">
                         <a href="#">Home</a>
                         <a href="#">About Us</a>
                         <a href="#">Blog</a>

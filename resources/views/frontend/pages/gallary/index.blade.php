@@ -22,7 +22,7 @@
     <!-- Page Breadcrumb .END -->
 
     <!-- all propertices Section START -->
-    <section class="company-gallery-wrapper section-padding-tb-70">
+    <section class="company-gallery-wrapper section-padding-t-70">
         <div class="container">
             <div class="gallery-grid-wrapper">
                 <div class="grid">

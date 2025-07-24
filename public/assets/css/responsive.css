@@ -1,5 +1,9 @@
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+    .bottom-footer-menu {
+        margin-top: 15px;
+        justify-content: center ! IMPORTANT;
+    }
     #banner_swiper .swiper-slide img {
         height: 600px !important;
     }

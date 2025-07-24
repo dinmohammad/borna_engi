@@ -6,6 +6,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('frontend.pages.landing.index');
 });
+Route::get('/about-us', function () {
+    return view('frontend.pages.about.index');
+});
 Route::get('/our-service', function () {
     return view('frontend.pages.service.index');
 });
