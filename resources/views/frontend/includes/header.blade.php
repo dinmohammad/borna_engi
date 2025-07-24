@@ -35,7 +35,7 @@
                                 <a class="nav-link" href="{{ url('/gallary') }}">Gallery</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ url('/our-service') }}">Contact Us
+                                <a class="nav-link" href="{{ url('/contact-us') }}">Contact Us
                                 </a>
                             </li>
                         </ul>
@@ -74,7 +74,7 @@
             <a class="nav-link" href="{{ url('/gallary') }}">Gallery</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="{{ url('/our-service') }}">Contact Us
+            <a class="nav-link" href="{{ url('/contact-us') }}">Contact Us
             </a>
         </li>
     </ul>

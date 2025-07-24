@@ -15,6 +15,9 @@ Route::get('/propertice', function () {
 Route::get('/gallary', function () {
     return view('frontend.pages.gallary.index');
 });
+Route::get('/contact-us', function () {
+    return view('frontend.pages.contact.index');
+});
 
 
 Route::get('admin/dashboard', function () {

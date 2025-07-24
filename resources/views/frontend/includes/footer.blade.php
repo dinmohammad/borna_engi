@@ -11,7 +11,7 @@
 <!-- Google Map .END -->
 
 
-<Footer class="footer-wrapper position-relative overflow-hidden section-padding-t-70">
+<Footer class="footer-wrapper position-relative overflow-hidden section-padding-t-70 theme-bg-primary">
     <div class="container">
         <div class="row">
             <div class="col-xl-5 col-md-5 col-sm-6 col-12">
@@ -29,7 +29,7 @@
             <div class="col-xl-7 col-md-7 col-sm-6 col-12">
                 <div class="f-contact-us-wrap">
                     <div class="section-heading">
-                        <h2>Contact Us</h2>
+                        <h2 class="text-white">Contact Us</h2>
                     </div>
                     <div class="contact-form-wrap section-content-top-margin">
                         <form >
@@ -50,7 +50,7 @@
                                     <textarea class="form-control" rows="4" placeholder="Message"></textarea>
                                 </div>
                                 <div class="col-12">
-                                    <button type="submit" class="theme-primary-solid-button">Submit</button>
+                                    <button type="submit" class="theme-white-solid-button">Submit</button>
                                 </div>
                             </div>
                         </form>

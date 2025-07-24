@@ -475,7 +475,7 @@ select.form-control{
 /* ========= Faq Css END ======== */
 
 /* ========= Footer Css Start ======== */
-.footer-wrapper:after {
+/* .footer-wrapper:after {
     position: absolute;
     content: '';
     bottom: 0;
@@ -484,7 +484,7 @@ select.form-control{
     height: 100%;
     background: #0B0D4E;
     z-index: -1;
-}
+} */
 .f-get-text{
     font-size: 18px;
     line-height: 21.6px;
@@ -511,7 +511,7 @@ select.form-control{
     text-decoration: underline !IMPORTANT;
 }
 .bottom-footer-menu > a {
-    color: #7B7B7B;
+    color: #ffffff91;
     font-size: 18px;
     line-height: 21px;
     font-weight: 600;
