@@ -46,6 +46,12 @@ a{
 .section-padding-b-70{
     padding-bottom: 70px;
 }
+.section-margin-t-70{
+    margin-top: 70px;
+}
+.section-margin-b-70{
+    margin-bottom: 70px;
+}
 .section-content-top-margin{
     margin-top: 50px;
 }
@@ -512,7 +518,37 @@ select.form-control{
 }
 /* ========= Footer Css END ======== */
 
-
+/* ========= Breadcrumb Css Start ======== */
+.page-breadcrumb{
+    height: 440px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.service-bg{
+    background-image: url('../images/banner/BG-1.png');
+}
+.page-breadcrumb-wrap nav ol li,
+.page-breadcrumb-wrap nav ol li a{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #E7E9EB !important;
+}
+.page-breadcrumb-wrap h1 {
+    font-size: 52px;
+    line-height: 72px;
+    font-weight: 600;
+    color: #fff;
+}
+.page-breadcrumb-wrap nav ol li.active{
+    columns: #fff !important;
+}
+/* ========= Breadcrumb Css END ======== */
 
 
 

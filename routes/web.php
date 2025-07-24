@@ -6,6 +6,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('frontend.pages.landing.index');
 });
+Route::get('/our-service', function () {
+    return view('frontend.pages.service.index');
+});
+Route::get('/about-us', function () {
+    return view('frontend.pages.about.index');
+});
+
 
 Route::get('admin/dashboard', function () {
     return view('admin.dashboard');

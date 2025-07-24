@@ -345,7 +345,7 @@
                                 cubilia curae; Proin sodales ultrices nulla blandit volutpat.
                             </p>
                         </div>
-                        <button class="theme-white-solid-button mt-4">View All</button>
+                        <a href="" class="theme-white-solid-button mt-4">View All</a>
                     </div>
                 </div>
             </div>
