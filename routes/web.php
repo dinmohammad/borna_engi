@@ -9,8 +9,8 @@ Route::get('/', function () {
 Route::get('/our-service', function () {
     return view('frontend.pages.service.index');
 });
-Route::get('/about-us', function () {
-    return view('frontend.pages.about.index');
+Route::get('/propertice', function () {
+    return view('frontend.pages.propertice.index');
 });
 
 

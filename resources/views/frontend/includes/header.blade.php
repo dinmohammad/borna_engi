@@ -29,7 +29,7 @@
                                 <a class="nav-link" href="{{ url('/our-service') }}">Our Service</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ url('/our-service') }}">Properties</a>
+                                <a class="nav-link" href="{{ url('/propertice') }}">Properties</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ url('/our-service') }}">Gallery</a>
@@ -68,7 +68,7 @@
             <a class="nav-link" href="{{ url('/our-service') }}">Our Service</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="{{ url('/our-service') }}">Properties</a>
+            <a class="nav-link" href="{{ url('/propertice') }}">Properties</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="{{ url('/our-service') }}">Gallery</a>
