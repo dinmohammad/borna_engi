@@ -55,13 +55,26 @@
                         <!-- Footer -->
                         @include('frontend.includes.footer')
                         <!--/Footer -->
+
+                        <!-- Scroll TOP -->
+                        <a
+                            href="#"
+                            class="scroll-top show"
+                            id="scroll-top"
+                            onClick={scrollToTop}
+                        >
+                            <i class="fa fa-long-arrow-up arrow-top" aria-hidden="true"></i>
+                        </a>
                     </div>
                     <!--/Content Scroll -->
-
                     <div id="app"></div>
                 </div>
                 <!--/Page Content -->
             </div>
+
+
+
+            
         </main>
 
 

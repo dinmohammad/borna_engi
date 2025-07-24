@@ -203,3 +203,18 @@ $(window).on("scroll", function () {
         header.removeClass(stickyClass);
     }
 });
+
+
+
+$(window).on("scroll", function () {
+    if ($(this).scrollTop() > 200) {
+        $("#scroll-top").fadeIn();
+    } else {
+        $("#scroll-top").fadeOut();
+    }
+});
+// Scroll to top on click
+$("#scroll-top").on("click", function (e) {
+    e.preventDefault();
+    $("html, body").animate({ scrollTop: 0 }, 800);
+});
