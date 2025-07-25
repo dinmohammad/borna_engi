@@ -62,15 +62,28 @@
                         @include('frontend.includes.footer')
                         <!--/Footer -->
 
-                        <!-- Scroll TOP -->
-                        <a
-                            href="#"
-                            class="scroll-top show"
-                            id="scroll-top"
-                            onClick={scrollToTop}
-                        >
-                            <i class="fa fa-long-arrow-up arrow-top" aria-hidden="true"></i>
-                        </a>
+                        <!-- whatsapp  -->
+                        <div class="fixed-button">
+                            <a
+                                href="https://wa.me/8801763851107"
+                                class="whatsapp-wrap show"
+                                id="whatsapp_wrap"
+                                target="_blank"
+                            >
+                                <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                            </a>
+                            <!-- Scroll TOP -->
+                            <a
+                                href="#"
+                                class="scroll-top show"
+                                id="scroll-top"
+                                onClick={scrollToTop}
+                            >
+                                <i class="fa fa-long-arrow-up arrow-top" aria-hidden="true"></i>
+                            </a>
+                        </div>
+
+
                     </div>
                     <!--/Content Scroll -->
                     <div id="app"></div>

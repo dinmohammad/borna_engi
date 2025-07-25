@@ -725,7 +725,7 @@ select.form-control{
 .scroll-top.show {
     visibility: visible;
     opacity: 1;
-    bottom: 60px
+    bottom: 105px;
 }
 
 .scroll-top svg {
@@ -738,6 +738,39 @@ select.form-control{
 
 .scroll-top:hover {
     background-position: 100%
+}
+
+/* whatsapp */
+.whatsapp-wrap {
+    position: fixed;
+    right: 30px;
+    bottom: 40px;
+    z-index: 999;
+    box-shadow: 0 30px 50px #25d3654f;
+    display: block;
+    padding: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 25px;
+    line-height: 60px;
+    cursor: pointer;
+    background-color: #25d366;
+    background-size: 200% auto;
+    background-position: 0;
+    color: #ffffff;
+    transition: all .5s cubic-bezier(.645,.045,.355,1);
+    overflow: hidden
+}
+
+@media only screen and (max-width: 479px) {
+    .whatsapp-wrap {
+        width:50px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 20px
+    }
 }
 /* ========= scroll top Css END ======== */
 
