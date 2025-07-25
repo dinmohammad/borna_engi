@@ -574,7 +574,7 @@ select.form-control{
     text-align: center;
 }
 .service-bg{
-    background-image: url('../images/banner/BG-1.png');
+    background-image: url('../images/banner/breadcrum_image.svg');
 }
 .page-breadcrumb-wrap nav ol li,
 .page-breadcrumb-wrap nav ol li a{

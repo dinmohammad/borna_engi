@@ -7,7 +7,7 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="hero-slider-single">
-                        <img src="{{ asset('assets/images/banner/banner_one.png') }}" alt="">
+                        <img src="{{ asset('assets/images/banner/banner_one.svg') }}" alt="">
                     </div>
                     <div class="hero-mid-content translate-middle-y position-absolute top-50 text-center w-100">
                         <div class="hero-mc-header">
@@ -18,7 +18,7 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="hero-slider-single">
-                        <img src="{{ asset('assets/images/banner/banner_one.png') }}" alt="">
+                        <img src="{{ asset('assets/images/banner/banner_one.svg') }}" alt="">
                     </div>
                     <div class="hero-mid-content translate-middle-y position-absolute top-50 text-center w-100">
                         <div class="hero-mc-header">
@@ -29,7 +29,7 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="hero-slider-single">
-                        <img src="{{ asset('assets/images/banner/banner_one.png') }}" alt="">
+                        <img src="{{ asset('assets/images/banner/banner_one.svg') }}" alt="">
                     </div>
                     <div class="hero-mid-content translate-middle-y position-absolute top-50 text-center w-100">
                         <div class="hero-mc-header">
