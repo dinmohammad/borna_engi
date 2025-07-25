@@ -266,6 +266,18 @@ select.form-control{
     object-fit: cover;
     object-position: center;
 }
+.hero-mc-header h1 {
+    font-size: 52px;
+    line-height: 72px;
+    font-weight: 500 !IMPORTANT;
+    letter-spacing: 0;
+}
+.hero-mc-header p {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #EDEFF6;
+}
 /* ========= Bannder Css END ======== */
 
 /* ========= Highlight Product Css Start ======== */

@@ -1,5 +1,8 @@
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+    .hero-mid-content{
+        padding: 0 15px;
+    }
     .contact-us-wrapper .single-box-item-three{
         margin-bottom: 20px;
     }
@@ -117,6 +120,13 @@
     .navbar-toggler:focus{
         outline: none !important;
         box-shadow: none !important;
+    }
+    .hero-mc-header h1 {
+        font-size: 36px !important;
+        line-height: 45px !important;
+    }
+    .hero-mid-content {
+        margin-top: 50px;
     }
 }
 

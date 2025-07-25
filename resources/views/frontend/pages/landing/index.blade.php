@@ -11,7 +11,7 @@
                     </div>
                     <div class="hero-mid-content translate-middle-y position-absolute top-50 text-center w-100">
                         <div class="hero-mc-header">
-                            <h1 class="display-4 fw-bold">Find Your Dream Home</h1>
+                            <h1 class="display-4 ">Find Your Dream Home</h1>
                             <p class="lead">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>
                         </div>
                     </div>
@@ -22,7 +22,7 @@
                     </div>
                     <div class="hero-mid-content translate-middle-y position-absolute top-50 text-center w-100">
                         <div class="hero-mc-header">
-                            <h1 class="display-4 fw-bold">Find Your Dream Home</h1>
+                            <h1 class="display-4 ">Find Your Dream Home</h1>
                             <p class="lead">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>
                         </div>
                     </div>
@@ -33,7 +33,7 @@
                     </div>
                     <div class="hero-mid-content translate-middle-y position-absolute top-50 text-center w-100">
                         <div class="hero-mc-header">
-                            <h1 class="display-4 fw-bold">Find Your Dream Home</h1>
+                            <h1 class="display-4 ">Find Your Dream Home</h1>
                             <p class="lead">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>
                         </div>
                     </div>
