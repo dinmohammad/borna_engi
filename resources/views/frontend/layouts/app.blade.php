@@ -34,7 +34,13 @@
 
         <main>
             <!-- Preloader -->
-
+            <div id="preloader" class="preloader-activate preloader-active open_tm_preloader">
+                <div class="preloader-area-wrap">
+                    <div  class="spinner d-flex justify-content-center align-items-center h-100">
+                        <img id="animated-gif" src="{{asset('assets/images/loader.gif')}}" alt="">
+                    </div>
+                </div>
+            </div>
             <!--/Preloader -->
 
             <div class="cd-index cd-main-content" >
@@ -84,7 +90,6 @@
         <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
         <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
-
 
         <script src="{{asset('assets/js/main.js')}}"></script>
        @yield('scripts')

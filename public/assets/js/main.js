@@ -218,3 +218,20 @@ $("#scroll-top").on("click", function (e) {
     e.preventDefault();
     $("html, body").animate({ scrollTop: 0 }, 800);
 });
+
+
+
+window.addEventListener("load", function () {
+    const preloader = document.getElementById("preloader");
+    preloader.style.transition = "opacity 0.5s ease";
+    preloader.style.opacity = 0;
+    setTimeout(() => {
+        preloader.style.display = "none";
+    }, 5000);
+});
+
+setInterval(() => {
+    const gif = document.getElementById("animated-gif");
+    const originalSrc = "assets/images/loader.gif";
+    gif.src = originalSrc + "?t=" + new Date().getTime(); // force reload
+}, 500);
