@@ -12,13 +12,16 @@
        <meta property="og:title" content="" />
        <meta property="og:description" content="" />
        <meta property="og:image" content="" /> 
-       <meta property="og:image:width" content="1200" />
-       <meta property="og:image:height" content="630" />
-       <meta name="brand_name" content="" />
+        <!-- Open Graph Meta Tags (for Facebook, LinkedIn, etc.) -->
+        <meta property="og:image" content="@yield('meta_image', asset('assets/images/logo.png'))">
+        <meta property="og:image:type" content="image/jpeg">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630">
+       <meta name="brand_name" content="Architects & Engineers" />
        <link rel="icon" type="image/png" href="{{ asset('assets/images/favicon.jpg') }}" />
        <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet" />
        <link href="{{ asset('assets/css/responsive.css') }}" rel="stylesheet" />
-       <link rel="stylesheet" href="{{ asset('assets/css/font-awesome.css') }}" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
        <link rel="stylesheet" href="{{ asset('assets/css/swiper-bundle.min.css') }}"/>
        <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,7 +40,10 @@
             <div id="preloader" class="preloader-activate preloader-active open_tm_preloader">
                 <div class="preloader-area-wrap">
                     <div  class="spinner d-flex justify-content-center align-items-center h-100">
-                        <img id="animated-gif" src="{{asset('assets/images/loader.gif')}}" alt="">
+                        <!-- <img id="animated-gif" src="{{asset('assets/images/loader.gif')}}" alt=""> -->
+                        <div class="bounce1"></div>
+                        <div class="bounce2"></div>
+                        <div class="bounce3"></div>
                     </div>
                 </div>
             </div>

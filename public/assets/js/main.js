@@ -230,8 +230,8 @@ window.addEventListener("load", function () {
     }, 500);
 });
 
-setInterval(() => {
-    const gif = document.getElementById("animated-gif");
-    const originalSrc = "assets/images/loader.gif";
-    gif.src = originalSrc + "?t=" + new Date().getTime(); // force reload
-}, 500);
+// setInterval(() => {
+//     const gif = document.getElementById("animated-gif");
+//     const originalSrc = "assets/images/loader.gif";
+//     gif.src = originalSrc + "?t=" + new Date().getTime(); // force reload
+// }, 500);
