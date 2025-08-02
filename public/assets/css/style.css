@@ -215,9 +215,33 @@ select.form-control{
 /* ========= Header Css END ======== */
 
 /* ========= Bannder Css Start ======== */
-.hero-wrapper .swiper-slide img {
+.hero-slider-single{
+    width: 100%;
     height: 928px;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
 }
+.hero-image-one{
+    background-image: url(../images/banner/1.jpg);
+}
+.hero-image-two{
+    background-image: url(../images/banner/2.jpg);
+}
+.hero-image-three{
+    background-image: url(../images/banner/3.jpg);
+}
+.hero-image-four{
+    background-image: url(../images/banner/4.jpg);
+}
+.hero-mid-content {
+    background: #00000063;
+    padding: 16px 24px;
+    border-radius: 5px;
+}
+/* .hero-wrapper .swiper-slide img {
+    height: 928px;
+} */
 .hero-single-input > label {
     font-size: 16px;
     font-weight: 600;
