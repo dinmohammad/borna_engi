@@ -119,7 +119,12 @@ select.form-control{
     width: 115px;
 }
 .top-bar-wrapper {
-    border-bottom: 0.5px solid #DBDFEC;
+    /* border-bottom: 0.5px solid #DBDFEC; */
+    /* From https://css.glass */
+    /* background: rgb(0 0 0 / 14%);
+    box-shadow: 0 -3px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(5px); */
 }
 .social-media-link li a {
     font-size: 14px;
@@ -302,6 +307,16 @@ select.form-control{
     font-weight: 400;
     color: #EDEFF6;
 }
+.swiper-pagination-custom {
+    bottom: 0 !important;
+    top: unset !important;
+    background: #fff !important;
+    height: 2px !important;
+}
+
+.swiper-pagination-custom span.swiper-pagination-progressbar-fill {
+    background: #FFD700 !important;
+}
 /* ========= Bannder Css END ======== */
 
 /* ========= Highlight Product Css Start ======== */
@@ -329,16 +344,13 @@ select.form-control{
     color: #fff;
 }
 .stb-bottom-content{
-    position: absolute;
-    content: '';
     padding: 16px 20px;
-    width: 85%;
     left: 50%;
-    transform: translateX(-50%);
     background-color: #0B0D4E;
     color: #fff;
-    border-radius: 5px;
-    bottom: -50px;
+    border-radius: 0 0 5px 5px;
+    border-top: .5px solid #fff;
+    width: 100%;
 }
 .stb-bottom-content > h5 {
     font-size: 18px;
@@ -389,6 +401,12 @@ select.form-control{
     width: 100%;
     height: 100%;
     opacity: 10%;
+}
+.ceo-image > img {
+    background: #0B0D4E;
+    height: 793px !important;
+    object-fit: cover;
+    object-position: top;
 }
 /* ========= CEO Css END ======== */
 
@@ -707,6 +725,11 @@ select.form-control{
     .grid-item:hover a.zoom-icon{
         opacity: 1;
         transition: .5s;
+    }
+    .gallary_slider .swiper-slide > img{
+        height: 650px;
+        object-fit: cover;
+        object-position: top;
     }
 /* ========= Gallary Css END ======== */
 

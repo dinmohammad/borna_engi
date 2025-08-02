@@ -47,7 +47,7 @@
                 </div>
 
             </div>
-            <div class="swiper-pagination"></div>
+            
         </div>
 
         <div class="hero-filter-content position-absolute bottom-0 pb-5 w-100 text-center z-1" id="hero_filter_content">
@@ -109,7 +109,7 @@
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="single-item-box position-relative">
-                                        <img src="{{ asset('assets/images/products/product_1.png') }}" width="100%" heigth="500" alt="borna engineering product ">
+                                        <img src="{{ asset('assets/images/products/1.jpeg') }}" width="100%" heigth="500" alt="borna engineering product ">
                                         <div class="stb-bottom-content">
                                             <h5>Vintage Villa</h5>
                                             <div class="icon-with-text-wrap">
@@ -121,7 +121,7 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="single-item-box position-relative">
-                                        <img src="{{ asset('assets/images/products/product_1.png') }}" width="100%" heigth="500" alt="borna engineering product ">
+                                        <img src="{{ asset('assets/images/products/2.jpeg') }}" width="100%" heigth="500" alt="borna engineering product ">
                                         <div class="stb-bottom-content">
                                             <h5>Vintage Villa</h5>
                                             <div class="icon-with-text-wrap">
@@ -133,7 +133,7 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="single-item-box position-relative">
-                                        <img src="{{ asset('assets/images/products/product_1.png') }}" width="100%" heigth="500" alt="borna engineering product ">
+                                        <img src="{{ asset('assets/images/products/3.jpeg') }}" width="100%" heigth="500" alt="borna engineering product ">
                                         <div class="stb-bottom-content">
                                             <h5>Vintage Villa</h5>
                                             <div class="icon-with-text-wrap">
@@ -145,7 +145,7 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="single-item-box position-relative">
-                                        <img src="{{ asset('assets/images/products/product_1.png') }}" width="100%" heigth="500" alt="borna engineering product ">
+                                        <img src="{{ asset('assets/images/products/4.jpeg') }}" width="100%" heigth="500" alt="borna engineering product ">
                                         <div class="stb-bottom-content">
                                             <h5>Vintage Villa</h5>
                                             <div class="icon-with-text-wrap">
@@ -157,44 +157,8 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="single-item-box position-relative">
-                                        <img src="{{ asset('assets/images/products/product_1.png') }}" width="100%" heigth="500" alt="borna engineering product ">
-                                        <div class="stb-bottom-content w-75">
-                                            <h5>Vintage Villa</h5>
-                                            <div class="icon-with-text-wrap">
-                                                <i class="fa fa-map-marker"></i>
-                                                <span>2715 Ash Dr. San Jose, Dubai</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="single-item-box position-relative">
-                                        <img src="{{ asset('assets/images/products/product_1.png') }}" width="100%" heigth="500" alt="borna engineering product ">
-                                        <div class="stb-bottom-content w-75">
-                                            <h5>Vintage Villa</h5>
-                                            <div class="icon-with-text-wrap">
-                                                <i class="fa fa-map-marker"></i>
-                                                <span>2715 Ash Dr. San Jose, Dubai</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="single-item-box position-relative">
-                                        <img src="{{ asset('assets/images/products/product_1.png') }}" width="100%" heigth="500" alt="borna engineering product ">
-                                        <div class="stb-bottom-content w-75">
-                                            <h5>Vintage Villa</h5>
-                                            <div class="icon-with-text-wrap">
-                                                <i class="fa fa-map-marker"></i>
-                                                <span>2715 Ash Dr. San Jose, Dubai</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="single-item-box position-relative">
-                                        <img src="{{ asset('assets/images/products/product_1.png') }}" width="100%" heigth="500" alt="borna engineering product ">
-                                        <div class="stb-bottom-content w-75">
+                                        <img src="{{ asset('assets/images/products/5.jpeg') }}" width="100%" heigth="500" alt="borna engineering product ">
+                                        <div class="stb-bottom-content">
                                             <h5>Vintage Villa</h5>
                                             <div class="icon-with-text-wrap">
                                                 <i class="fa fa-map-marker"></i>
@@ -275,13 +239,16 @@
                         <div class="swiper why_choose_slider">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide single-why-choose-image">
-                                    <img src="{{ asset('assets/images/start_product/star_1.png') }}" width="100%" heigth="100%" alt="borna engineering product ">
+                                    <img src="{{ asset('assets/images/start_product/1.jpg') }}" width="100%" heigth="100%" alt="borna engineering product ">
                                 </div>
                                 <div class="swiper-slide single-why-choose-image">
-                                    <img src="{{ asset('assets/images/start_product/star_1.png') }}" width="100%" heigth="100%" alt="borna engineering product ">
+                                    <img src="{{ asset('assets/images/start_product/2.jpg') }}" width="100%" heigth="100%" alt="borna engineering product ">
                                 </div>
                                 <div class="swiper-slide single-why-choose-image">
-                                    <img src="{{ asset('assets/images/start_product/star_1.png') }}" width="100%" heigth="100%" alt="borna engineering product ">
+                                    <img src="{{ asset('assets/images/start_product/3.jpg') }}" width="100%" heigth="100%" alt="borna engineering product ">
+                                </div>
+                                <div class="swiper-slide single-why-choose-image">
+                                    <img src="{{ asset('assets/images/start_product/4.jpg') }}" width="100%" heigth="100%" alt="borna engineering product ">
                                 </div>
                             </div>
                             <!-- Navigation buttons -->
@@ -332,7 +299,7 @@
                 <!-- right -->
                 <div class="col-xl-6 col-lg-6 col-md-12 col-12">
                     <div class="ceo-image position-relative">
-                        <img src="{{ asset('assets/images/ceo.png') }}" width="100%" heigth="100%" alt="borna engineering product ">
+                        <img src="{{ asset('assets/images/ceo_1.png') }}" width="100%" heigth="100%" alt="borna engineering product ">
                     </div>
                 </div>
             </div>
@@ -553,12 +520,20 @@
                         <div class="swiper gallary_slider">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <img src="{{ asset('assets/images/gallary/gallary-1.png')}}" width="100%" height="100%" alt="">
+                                    <img src="{{ asset('assets/images/banner/1.jpg')}}" width="100%" height="100%" alt="">
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="{{ asset('assets/images/gallary/gallary-1.png')}}" width="100%" height="100%" alt="">
+                                    <img src="{{ asset('assets/images/banner/2.jpg')}}" width="100%" height="100%" alt="">
                                 </div>
-                                
+                                <div class="swiper-slide">
+                                    <img src="{{ asset('assets/images/banner/3.jpg')}}" width="100%" height="100%" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="{{ asset('assets/images/banner/4.jpg')}}" width="100%" height="100%" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="{{ asset('assets/images/banner/5.jpg')}}" width="100%" height="100%" alt="">
+                                </div>
                             </div>
                             <!-- Navigation buttons -->
                             <div class="swiper-button-prev"></div>
