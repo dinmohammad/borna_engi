@@ -447,7 +447,7 @@ select.form-control{
 }
 .ceo-image > img {
     background: #0B0D4E;
-    height: 793px !important;
+    /* height: 793px !important; */
     object-fit: cover;
     object-position: top;
 }

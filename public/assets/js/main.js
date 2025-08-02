@@ -229,14 +229,14 @@ $("#scroll-top").on("click", function (e) {
 
 
 
-window.addEventListener("load", function () {
-    const preloader = document.getElementById("preloader");
-    preloader.style.transition = "opacity 0.5s ease";
-    preloader.style.opacity = 0;
-    setTimeout(() => {
-        preloader.style.display = "none";
-    }, 500);
-});
+// window.addEventListener("load", function () {
+//     const preloader = document.getElementById("preloader");
+//     preloader.style.transition = "opacity 0.5s ease";
+//     preloader.style.opacity = 0;
+//     setTimeout(() => {
+//         preloader.style.display = "none";
+//     }, 500);
+// });
 
 // setInterval(() => {
 //     const gif = document.getElementById("animated-gif");
