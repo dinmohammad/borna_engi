@@ -43,7 +43,9 @@
                             <div class="grid">
                                 <div class="grid-item grid-item--width2 gallery-item">
                                     <div class="single-item-box position-relative">
-                                        <img src="{{ asset('assets/images/products/1.jpeg') }}" width="100%" heigth="500" alt="borna engineering product ">
+                                        <div class="stb-image hover-image-animation">
+                                            <img src="{{ asset('assets/images/products/1.jpeg') }}" width="100%" height="auto" alt="borna engineering product ">
+                                        </div>
                                         <div class="stb-bottom-content">
                                             <h5>Vintage Villa</h5>
                                             <div class="icon-with-text-wrap">
@@ -55,7 +57,9 @@
                                 </div>
                                 <div class="grid-item grid-item--width2 gallery-item">
                                     <div class="single-item-box position-relative">
-                                        <img src="{{ asset('assets/images/products/2.jpeg') }}" width="100%" heigth="500" alt="borna engineering product ">
+                                        <div class="stb-image hover-image-animation">
+                                            <img src="{{ asset('assets/images/products/2.jpeg') }}" width="100%" height="auto" alt="borna engineering product ">
+                                        </div>
                                         <div class="stb-bottom-content">
                                             <h5>Vintage Villa</h5>
                                             <div class="icon-with-text-wrap">
@@ -67,7 +71,9 @@
                                 </div>
                                 <div class="grid-item grid-item--width2 gallery-item">
                                     <div class="single-item-box position-relative">
-                                        <img src="{{ asset('assets/images/products/3.jpeg') }}" width="100%" heigth="500" alt="borna engineering product ">
+                                        <div class="stb-image hover-image-animation">
+                                            <img src="{{ asset('assets/images/products/3.jpeg') }}" width="100%" height="auto" alt="borna engineering product ">
+                                        </div>
                                         <div class="stb-bottom-content">
                                             <h5>Vintage Villa</h5>
                                             <div class="icon-with-text-wrap">
@@ -79,7 +85,9 @@
                                 </div>
                                 <div class="grid-item grid-item--width2 gallery-item">
                                     <div class="single-item-box position-relative">
-                                        <img src="{{ asset('assets/images/products/4.jpeg') }}" width="100%" heigth="500" alt="borna engineering product ">
+                                        <div class="stb-image hover-image-animation">
+                                            <img src="{{ asset('assets/images/products/4.jpeg') }}" width="100%" height="auto" alt="borna engineering product ">
+                                        </div>
                                         <div class="stb-bottom-content">
                                             <h5>Vintage Villa</h5>
                                             <div class="icon-with-text-wrap">
@@ -91,7 +99,9 @@
                                 </div>
                                 <div class="grid-item grid-item--width2 gallery-item">
                                     <div class="single-item-box position-relative">
-                                        <img src="{{ asset('assets/images/products/5.jpeg') }}" width="100%" heigth="500" alt="borna engineering product ">
+                                        <div class="stb-image hover-image-animation">
+                                            <img src="{{ asset('assets/images/products/5.jpeg') }}" width="100%" height="auto" alt="borna engineering product ">
+                                        </div>
                                         <div class="stb-bottom-content">
                                             <h5>Vintage Villa</h5>
                                             <div class="icon-with-text-wrap">
@@ -101,11 +111,9 @@
                                         </div>
                                     </div>
                                 </div>
-
-                                
                             </div>
-
                         </div>
+
                     </div>
                 </div>
             </div>

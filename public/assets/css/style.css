@@ -99,6 +99,17 @@ select.form-control{
 .client-testi-pagination .swiper-button-prev {
     background: #C1CDDA  !important;
 }
+.hover-image-animation{
+    overflow: hidden;
+}
+.hover-image-animation img{
+    transform: scale(1);
+    transition: .5s;
+}
+.hover-image-animation img:hover{
+    transform: scale(1.2);
+    transition: .5s;
+}
 /* ========= Global Css END ======== */
 
 

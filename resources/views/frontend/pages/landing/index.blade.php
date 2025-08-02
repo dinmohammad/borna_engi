@@ -116,7 +116,9 @@
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="single-item-box position-relative">
-                                        <img src="{{ asset('assets/images/products/1.jpeg') }}" width="100%" heigth="500" alt="borna engineering product ">
+                                        <div class="stb-image hover-image-animation">
+                                            <img src="{{ asset('assets/images/products/1.jpeg') }}" width="100%" height="auto" alt="borna engineering product ">
+                                        </div>
                                         <div class="stb-bottom-content">
                                             <h5>Vintage Villa</h5>
                                             <div class="icon-with-text-wrap">
@@ -128,7 +130,9 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="single-item-box position-relative">
-                                        <img src="{{ asset('assets/images/products/2.jpeg') }}" width="100%" heigth="500" alt="borna engineering product ">
+                                        <div class="stb-image hover-image-animation">
+                                            <img src="{{ asset('assets/images/products/2.jpeg') }}" width="100%" height="auto" alt="borna engineering product ">
+                                        </div>
                                         <div class="stb-bottom-content">
                                             <h5>Vintage Villa</h5>
                                             <div class="icon-with-text-wrap">
@@ -140,7 +144,9 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="single-item-box position-relative">
-                                        <img src="{{ asset('assets/images/products/3.jpeg') }}" width="100%" heigth="500" alt="borna engineering product ">
+                                        <div class="stb-image hover-image-animation">
+                                            <img src="{{ asset('assets/images/products/3.jpeg') }}" width="100%" height="auto" alt="borna engineering product ">
+                                        </div>
                                         <div class="stb-bottom-content">
                                             <h5>Vintage Villa</h5>
                                             <div class="icon-with-text-wrap">
@@ -152,7 +158,9 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="single-item-box position-relative">
-                                        <img src="{{ asset('assets/images/products/4.jpeg') }}" width="100%" heigth="500" alt="borna engineering product ">
+                                        <div class="stb-image hover-image-animation">
+                                            <img src="{{ asset('assets/images/products/4.jpeg') }}" width="100%" height="auto" alt="borna engineering product ">
+                                        </div>
                                         <div class="stb-bottom-content">
                                             <h5>Vintage Villa</h5>
                                             <div class="icon-with-text-wrap">
@@ -164,7 +172,9 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="single-item-box position-relative">
-                                        <img src="{{ asset('assets/images/products/5.jpeg') }}" width="100%" heigth="500" alt="borna engineering product ">
+                                        <div class="stb-image hover-image-animation">
+                                            <img src="{{ asset('assets/images/products/5.jpeg') }}" width="100%" height="auto" alt="borna engineering product ">
+                                        </div>
                                         <div class="stb-bottom-content">
                                             <h5>Vintage Villa</h5>
                                             <div class="icon-with-text-wrap">
@@ -175,6 +185,7 @@
                                     </div>
                                 </div>
                             </div>
+
                            
                         </div>
                     </div>
@@ -244,18 +255,27 @@
                         <div class="swiper why_choose_slider">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide single-why-choose-image">
-                                    <img src="{{ asset('assets/images/start_product/1.jpg') }}" width="100%" heigth="100%" alt="borna engineering product ">
+                                    <div class="hover-image-animation">
+                                        <img src="{{ asset('assets/images/start_product/1.jpg') }}" width="100%" height="auto" alt="borna engineering product ">
+                                    </div>
                                 </div>
                                 <div class="swiper-slide single-why-choose-image">
-                                    <img src="{{ asset('assets/images/start_product/2.jpg') }}" width="100%" heigth="100%" alt="borna engineering product ">
+                                    <div class="hover-image-animation">
+                                        <img src="{{ asset('assets/images/start_product/2.jpg') }}" width="100%" height="auto" alt="borna engineering product ">
+                                    </div>
                                 </div>
                                 <div class="swiper-slide single-why-choose-image">
-                                    <img src="{{ asset('assets/images/start_product/3.jpg') }}" width="100%" heigth="100%" alt="borna engineering product ">
+                                    <div class="hover-image-animation">
+                                        <img src="{{ asset('assets/images/start_product/3.jpg') }}" width="100%" height="auto" alt="borna engineering product ">
+                                    </div>
                                 </div>
                                 <div class="swiper-slide single-why-choose-image">
-                                    <img src="{{ asset('assets/images/start_product/4.jpg') }}" width="100%" heigth="100%" alt="borna engineering product ">
+                                    <div class="hover-image-animation">
+                                        <img src="{{ asset('assets/images/start_product/4.jpg') }}" width="100%" height="auto" alt="borna engineering product ">
+                                    </div>
                                 </div>
                             </div>
+
                         </div>
                         <!-- Navigation buttons -->
                         <div class="pagination-wrap position-relative" style="width: 140px !important">
