@@ -75,10 +75,7 @@ var swiper = new Swiper(".video_slider", {
         delay: 5000,
         disableOnInteraction: false,
     },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
+    navigation: false,
     pagination: false,
 
     // Responsive breakpoints
@@ -107,10 +104,10 @@ var swiper = new Swiper(".product_slider", {
     spaceBetween: 20,
     loop: true,
     loopFillGroupWithBlank: true,
-    autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
-    },
+    // autoplay: {
+    //     delay: 5000,
+    //     disableOnInteraction: false,
+    // },
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",

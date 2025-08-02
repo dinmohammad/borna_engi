@@ -6,7 +6,7 @@
                     <li>
                         <a href="mailto:mailto:bornaengineering@gmail.com" class="d-flex align-content-center gap-2 top-h-mail">
                             <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                            <span><strong>Email us at</strong> : example@mail.com</span>
+                            <span><strong>Email us at</strong> : bornaengineering@gmail.com</span>
                         </a>
                     </li>
                 </ul>

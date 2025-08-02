@@ -65,7 +65,7 @@
                     <div class="social-links d-flex gap-4 justify-content-center align-items-center">
                         <a href="https://www.youtube.com/@BornaEngineering">Youtube</a>
                         <a href="https://www.facebook.comBornaengineering">FACEBOOK</a>
-                        <a href="#">Linkedin</a>
+                        <a href="https://www.linkedin.com/in/engr-boshor-siddique-394618154/">Linkedin</a>
                     </div>
                 </div>
                 <div class="col-xl-7 col-md-7 col-sm-6 col-12">

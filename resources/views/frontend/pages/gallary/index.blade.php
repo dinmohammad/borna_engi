@@ -27,8 +27,8 @@
             <div class="gallery-grid-wrapper">
                 <div class="grid">
                     <div class="grid-item grid-item--width2 gallery-item">
-                        <img src="{{ asset('assets/images/banner/banner_one.png') }}" class="img-fluid" alt="Banner One">
-                        <a href="{{ asset('assets/images/banner/banner_one.png') }}"
+                        <img src="{{ asset('assets/images/products/1.jpeg') }}" class="img-fluid" alt="Banner One">
+                        <a href="{{ asset('assets/images/products/1.jpeg') }}"
                         data-lightbox="company-gallery"
                         data-title="Banner One"
                         class="zoom-icon">
@@ -37,8 +37,8 @@
                     </div>
 
                     <div class="grid-item gallery-item">
-                        <img src="{{ asset('assets/images/banner/bg-2.png') }}" class="img-fluid" alt="BG Two">
-                        <a href="{{ asset('assets/images/banner/bg-2.png') }}"
+                        <img src="{{ asset('assets/images/products/2.jpeg') }}" class="img-fluid" alt="BG Two">
+                        <a href="{{ asset('assets/images/products/2.jpeg') }}"
                         data-lightbox="company-gallery"
                         data-title="BG Two"
                         class="zoom-icon">
@@ -47,8 +47,8 @@
                     </div>
 
                     <div class="grid-item gallery-item">
-                        <img src="{{ asset('assets/images/banner/contact_bg.png') }}" class="img-fluid" alt="Contact Background">
-                        <a href="{{ asset('assets/images/banner/contact_bg.png') }}"
+                        <img src="{{ asset('assets/images/products/3.jpeg') }}" class="img-fluid" alt="Contact Background">
+                        <a href="{{ asset('assets/images/products/3.jpeg') }}"
                         data-lightbox="company-gallery"
                         data-title="Contact Background"
                         class="zoom-icon">
@@ -57,8 +57,8 @@
                     </div>
 
                     <div class="grid-item grid-item--width2 gallery-item">
-                        <img src="{{ asset('assets/images/gallary/gallary-1.png') }}" class="img-fluid" alt="Gallery One">
-                        <a href="{{ asset('assets/images/gallary/gallary-1.png') }}"
+                        <img src="{{ asset('assets/images/products/4.jpeg') }}" class="img-fluid" alt="Gallery One">
+                        <a href="{{ asset('assets/images/products/4.jpeg') }}"
                         data-lightbox="company-gallery"
                         data-title="Gallery One"
                         class="zoom-icon">
@@ -67,8 +67,17 @@
                     </div>
 
                     <div class="grid-item grid-item--width2 gallery-item">
-                        <img src="{{ asset('assets/images/products/product_1.png') }}" class="img-fluid" alt="Gallery One">
-                        <a href="{{ asset('assets/images/products/product_1.png') }}"
+                        <img src="{{ asset('assets/images/products/5.jpeg') }}" class="img-fluid" alt="Gallery One">
+                        <a href="{{ asset('assets/images/products/5.jpeg') }}"
+                        data-lightbox="company-gallery"
+                        data-title="Gallery One"
+                        class="zoom-icon">
+                            <i class="fa fa-search"></i>
+                        </a>
+                    </div>
+                    <div class="grid-item grid-item--width2 gallery-item">
+                        <img src="{{ asset('assets/images/products/6.jpeg') }}" class="img-fluid" alt="Gallery One">
+                        <a href="{{ asset('assets/images/products/6.jpeg') }}"
                         data-lightbox="company-gallery"
                         data-title="Gallery One"
                         class="zoom-icon">

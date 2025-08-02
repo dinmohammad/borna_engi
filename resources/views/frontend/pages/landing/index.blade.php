@@ -96,10 +96,17 @@
     <section class="highlight-product-wrapper position-relative overflow-hidden section-padding-tb-70" id="highlight_product_wrapper">
         <div class="container">
             <div class="row">
-                <div class="col-xl-12 col-md-12">
-                    <div class="section-heading">
-                        <h2>Highlighted Projects</h2>
-                        <p class="m-0">Turpis facilisis tempor pulvinar in lobortis ornare magna.</p>
+                <div class="col-xl-12 col-md-12 position-relative">
+                    <div class="d-block text-center text-md-start d-md-flex flex-wrap justify-content-between align-items-center gap-3">
+                        <div class="section-heading">
+                            <h2>Highlighted Projects</h2>
+                            <p class="m-0">Turpis facilisis tempor pulvinar in lobortis ornare magna.</p>
+                        </div>
+                        <!-- Navigation buttons -->
+                        <div class="position-relative highlight-swiper-button-wrap" style="width: 140px !important;">
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
                     </div>
                 </div>
 
@@ -168,9 +175,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- Navigation buttons -->
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-button-next"></div>
+                           
                         </div>
                     </div>
                 </div>
@@ -221,7 +226,7 @@
                     <div class="section-heading">
                         <h2>We use Real Estate to show our appreciation of the world.</h2>
                         <p class="m-0">We provide equity and debt capital globally to back projects that make an impact.</p>
-                        <button class="theme-primary-solid-button mt-4">Know More</button>
+                        <a href="{{ url('/our-service') }}" class="theme-primary-solid-button mt-4 d-inline-block">Know More</a>
                     </div>
                 </div>
             </div>
@@ -251,8 +256,10 @@
                                     <img src="{{ asset('assets/images/start_product/4.jpg') }}" width="100%" heigth="100%" alt="borna engineering product ">
                                 </div>
                             </div>
-                            <!-- Navigation buttons -->
-                            <div class="swiper-button-prev"></div>
+                        </div>
+                        <!-- Navigation buttons -->
+                        <div class="pagination-wrap position-relative" style="width: 140px !important">
+                             <div class="swiper-button-prev"></div>
                             <div class="swiper-button-next"></div>
                         </div>
                     </div>
@@ -269,7 +276,7 @@
                                 and more. Such facilities can offer an enhanced quality of life for residents, making it easier
                                 to stay active, socialize and pursue hobbies.
                             </p>
-                            <button class="theme-primary-solid-button mt-4">Read More</button>
+                            <a href="{{ url('/our-service') }}" class="theme-primary-solid-button mt-4 d-inline-block">Know More</a>
                         </div>
                     </div>
                 </div>
@@ -293,6 +300,24 @@
                                 cost reducing and improving quality.
                             </p>
                             <button class="theme-primary-solid-button mt-4">More Details</button>
+
+                            <ul class="object-social-links p-0 m-0 text-capitalize list-unstyled d-flex gap-3 mt-4">
+                                <li class="text-dark">
+                                    <a target="_blank" href="https://www.youtube.com/@BornaEngineering">
+                                        YOUTUBE
+                                    </a>
+                                </li>
+                                <li class="text-dark">
+                                    <a target="_blank" href="https://www.facebook.com/Boshorsiddiqe/">
+                                        FACEBOOK
+                                    </a>
+                                </li>
+                                <li class="text-dark">
+                                    <a target="_blank" href="https://www.linkedin.com/in/engr-boshor-siddique-394618154/?originalSubdomain=bd">
+                                        LINKEDIN
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -320,7 +345,7 @@
                                 cubilia curae; Proin sodales ultrices nulla blandit volutpat.
                             </p>
                         </div>
-                        <a href="" class="theme-white-solid-button mt-4 d-inline-block">View All</a>
+                        <a href="{{ url('/our-service') }}" class="theme-white-solid-button mt-4 d-inline-block">View All</a>
                     </div>
                 </div>
             </div>
@@ -374,7 +399,11 @@
                                 Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere  cubilia curae; Proin sodales ultrices nulla blandit volutpat.
                             </p>
                         </div>
-                        <button class="theme-white-solid-button mt-4">View All</button>
+                        <!-- Navigation buttons -->
+                        <div class="client-testi-pagination position-relative" style="width: 142px !important;">
+                            <div class="swiper-button-prev bg-white"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -412,9 +441,6 @@
                                     <img class="object-fit-cover" src="{{ asset('assets/images/testimonials/client-1.png') }}" height="286" width="286"  alt="borna engineering product ">
                                 </div>
                             </div>
-                            <!-- Navigation buttons -->
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-button-next"></div>
                         </div>
                     </div>
                 </div>
@@ -437,7 +463,7 @@
                                     Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin sodales ultrices nulla blandit volutpat.
                                 </p>
                             </div>
-                            <button class="theme-white-solid-button mt-4">View All</button>
+                            <a href="https://www.youtube.com/@BornaEngineering" target="_blank" class="theme-white-solid-button mt-4 d-inline-block">View All</a>
                         </div>
                     </div>
                 </div>
@@ -475,8 +501,8 @@
                                 </div>
                             </div>
                             <!-- Navigation buttons -->
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-button-next"></div>
+                            <!-- <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div> -->
                         </div>
                     </div>
                 </div>
@@ -509,7 +535,7 @@
                         <div class="section-heading w-50">
                             <h2>Gallary</h2>
                         </div>
-                        <button class="theme-primary-solid-button mt-4">View All</button>
+                        <a href="{{ url('/gallary') }}" class="theme-primary-solid-button mt-4 d-inline-block">View All</a>
                     </div>
                 </div>
             </div>
@@ -535,8 +561,10 @@
                                     <img src="{{ asset('assets/images/banner/5.jpg')}}" width="100%" height="100%" alt="">
                                 </div>
                             </div>
-                            <!-- Navigation buttons -->
-                            <div class="swiper-button-prev"></div>
+                        </div>
+                        <!-- Navigation buttons -->
+                        <div class="pagination-wrap position-relative" style="width: 140px !important">
+                             <div class="swiper-button-prev"></div>
                             <div class="swiper-button-next"></div>
                         </div>
                     </div>
@@ -558,7 +586,8 @@
                                 Spend vacations in best hotels and resorts find the great place of your
                                 choice using different searching options.
                             </p>
-                            <button class="theme-white-solid-button mt-4">Contact Us</button>
+                            <a href="{{ url('/contact-us') }}" class="theme-white-solid-button mt-4 d-inline-block">Contact Us</a>
+
                         </div>
                     </div>
                 </div>
