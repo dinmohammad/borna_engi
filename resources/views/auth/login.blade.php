@@ -72,11 +72,11 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-md-6 text-end">
+                                    <!-- <div class="col-md-6 text-end">
                                         @if (Route::has('password.request'))
                                             <a href="{{ route('password.request') }}">Forgot Password?</a>
                                         @endif
-                                    </div>
+                                    </div> -->
 
                                     <div class="col-12">
                                         <div class="d-grid">
@@ -87,9 +87,7 @@
                                     </div>
 
                                     <div class="col-12 text-center">
-                                        <p class="mb-0">Don't have an account yet? 
-                                            <a href="{{ route('register') }}">Sign up here</a>
-                                        </p>
+                                        <p class="mb-0">Don't have an account yet? <strong>Please Contact Admin</strong></p>
                                     </div>
                                 </form>
                                 <!-- End Form -->
@@ -100,7 +98,7 @@
                 </div>
             </div>
         </div>
-     </div>
+    </div>
 </div>
 
 <!-- Scripts -->
