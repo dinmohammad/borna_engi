@@ -1,17 +1,72 @@
-<x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Dashboard') }}
-        </h2>
-    </x-slot>
+@extends('admin.layouts.app')
 
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 text-gray-900">
-                    {{ __("You're logged in!") }}
+@section('content')
+<div class="page-content">
+    <div class="row row-cols-1 row-cols-lg-4">
+        <div class="col">
+            <div class="card rounded-4 bg-gradient-rainbow bubble position-relative overflow-hidden">
+                <div class="card-body">
+                    <div class="d-flex align-items-center justify-content-between mb-0">
+                        <div class="">
+                            <h4 class="mb-0 text-white">986</h4>
+                            <p class="mb-0 text-white">Total Orders</p>
+                        </div>
+                        <div class="fs-1 text-white">
+                        <i class='bx bx-cart'></i>
+                        </div>
+                    </div>
+                    <small class="mb-0 text-white">+2.6% Since Last Week</small>
                 </div>
             </div>
         </div>
-    </div>
-</x-app-layout>
+        <div class="col">
+            <div class="card rounded-4 bg-gradient-burning bubble position-relative overflow-hidden">
+                <div class="card-body">
+                    <div class="d-flex align-items-center justify-content-between mb-0">
+                        <div class="">
+                            <h4 class="mb-0 text-white">485</h4>
+                            <p class="mb-0 text-white">Customers</p>
+                        </div>
+                        <div class="fs-1 text-white">
+                        <i class='bx bx-group'></i>
+                        </div>
+                    </div>
+                    <small class="mb-0 text-white">+2.6% Since Last Week</small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card rounded-4 bg-gradient-moonlit bubble position-relative overflow-hidden">
+                <div class="card-body">
+                    <div class="d-flex align-items-center justify-content-between mb-0">
+                        <div class="">
+                            <h4 class="mb-0 text-white">$24K</h4>
+                            <p class="mb-0 text-white">Total Revenue</p>
+                        </div>
+                        <div class="fs-1 text-white">
+                            <i class='bx bx-wallet' ></i>
+                        </div>
+                    </div>
+                    <small class="mb-0 text-white">+2.6% Since Last Week</small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card rounded-4 bg-gradient-cosmic bubble position-relative overflow-hidden">
+                <div class="card-body">
+                    <div class="d-flex align-items-center justify-content-between mb-0">
+                        <div class="">
+                            <h4 class="mb-0 text-white">22%</h4>
+                            <p class="mb-0 text-white">Total Growth</p>
+                        </div>
+                        <div class="fs-1 text-white">
+                            <i class='bx bx-line-chart-down'></i>
+                        </div>
+                    </div>
+                    <small class="mb-0 text-white">+2.6% Since Last Week</small>
+                </div>
+            </div>
+        </div>
+    </div><!--end row--> 
+</div>
+@endsection
