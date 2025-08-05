@@ -9,6 +9,7 @@ use Intervention\Image\Facades\Image;
 use App\Models\BannerSlider;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Validator;
 
 class BannerSectionController extends Controller
 {
@@ -43,42 +44,44 @@ class BannerSectionController extends Controller
 
     public function store(Request $request)
     {
+        // Step 1: Validate the file type and extension
         $request->validate([
             'image' => 'nullable|image|mimes:jpeg,png,jpg,webp',
         ], [
             'image.mimes' => 'Only jpeg, png, jpg, and webp images are allowed.',
         ]);
 
-        $banner_slider = new BannerSlider();
-
+        // Step 2: If image is uploaded, check its dimensions
         if ($request->hasFile('image')) {
             $image = $request->file('image');
-            $directory = 'assets/images/banner/';
 
-            // Ensure directory exists
-            $destinationPath = public_path($directory);
-            if (!File::exists($destinationPath)) {
-                File::makeDirectory($destinationPath, 0777, true);
+            // Get image dimensions
+            list($width, $height) = getimagesize($image);
+
+            // Check if it matches 1920x1080
+            if ($width !== 1920 || $height !== 1080) {
+                return redirect()->back()
+                    ->withInput()
+                    ->withErrors(['image' => 'Image must be exactly 1920x1080 pixels.']);
             }
 
-            $extension = $image->getClientOriginalExtension();
-
-            // Compress and save image
-            $compressedImage = Image::make($image)->encode($extension, 75);
-
-            // Generate unique filename
-            $imageName = now()->format('ymdHis') . '_' . Str::random(10) . '.' . $extension;
-
-            // Save compressed image
-            $compressedImage->save($destinationPath . $imageName);
-
-            // Save relative path
-            $banner_slider->image = $directory . $imageName;
+            // Generate a unique name and move to folder
+            $filename = time() . '_' . uniqid() . '.' . $image->getClientOriginalExtension();
+            $image->move(public_path('uploads/banner_sliders'), $filename);
         }
 
-        dd($banner_slider);
+        // Create and save model
+        $banner_slider = new BannerSlider();
+        $banner_slider->title = $request->input('title');
+        $banner_slider->description = $request->input('description');
+        $banner_slider->status = $request->input('status', 0);
+        if (isset($filename)) {
+            $banner_slider->image = 'uploads/banner_sliders/' . $filename;
+        }
+        $banner_slider->save();
 
-        return view('admin.website_management.banner_slider.create');
+        return redirect()->route('admin.banner-slider.create')->with('success', 'Banner slider created successfully!');
     }
+    
     
 }

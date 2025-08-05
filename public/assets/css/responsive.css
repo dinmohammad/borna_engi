@@ -308,3 +308,12 @@
 @media (min-width: 1400px) {
   /* Your very large screen styles here */
 }
+
+
+
+@media (min-width: 576px) {
+    .custom-widget-container{
+        min-height: none !important;
+        height: auto;
+    }
+}

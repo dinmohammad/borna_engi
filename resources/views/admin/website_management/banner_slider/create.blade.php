@@ -30,7 +30,8 @@
                         <label for="image" class="form-label">Image</label>
                         <input class="form-control" name="image" id="image" type="file" accept="image/*" onchange="previewImage(event)">
                         <div id="image_help" class="form-text text-danger">File ratio 1920x1080</div>
-                        
+                        <p id="dimension_error" style="color:red;"></p>
+
                         <div class="mt-2">
                             <img id="image_preview" src="#" alt="Preview" style="display: none; max-height: 200px; border: 1px solid #ddd; padding: 5px;">
                         </div>
@@ -57,20 +58,40 @@
 
 @section('script')
 <script>
-     function previewImage(event) {
+    function previewImage(event) {
         const input = event.target;
         const preview = document.getElementById('image_preview');
+        const error = document.getElementById('dimension_error');
+
+        preview.style.display = 'none';
+        error.textContent = '';
 
         if (input.files && input.files[0]) {
+            const file = input.files[0];
             const reader = new FileReader();
 
             reader.onload = function (e) {
-                preview.src = e.target.result;
-                preview.style.display = 'block';
+                const img = new Image();
+                img.src = e.target.result;
+
+                img.onload = function () {
+                    const width = img.width;
+                    const height = img.height;
+
+                    if (width === 1920 && height === 1080) {
+                        preview.src = img.src;
+                        preview.style.display = 'block';
+                    } else {
+                        alert('Image must be exactly 1920x1080 pixels.');
+                        error.textContent = 'Image must be exactly 1920x1080 pixels.';
+                        input.value = ''; // Clear the input
+                    }
+                };
             };
 
-            reader.readAsDataURL(input.files[0]);
+            reader.readAsDataURL(file);
         }
     }
+
 </script>
 @endsection
