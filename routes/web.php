@@ -33,6 +33,10 @@ Route::middleware(['auth', 'verified'])->prefix('admin')->name('admin.')->group(
     Route::get('/banner-slider/all', [BannerSectionController::class, 'index'])->name('banner-slider.index');
     Route::get('/banner-slider/create', [BannerSectionController::class, 'create'])->name('banner-slider.create');
     Route::post('/banner-slider/store', [BannerSectionController::class, 'store'])->name('banner-slider.store');
+    Route::get('/banner-slider/edit/{id}', [BannerSectionController::class, 'edit'])->name('banner-slider.edit');
+    Route::put('/banner-slider/update/{id}', [BannerSectionController::class, 'update'])->name('banner-slider.update');
+    Route::get('/banner-slider/active/{id}', [BannerSectionController::class, 'active'])->name('banner-slider.active');
+    Route::get('/banner-slider/inActive/{id}', [BannerSectionController::class, 'inActive'])->name('banner-slider.inActive');
 
 });
 

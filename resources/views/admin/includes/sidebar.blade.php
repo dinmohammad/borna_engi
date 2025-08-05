@@ -25,7 +25,7 @@
                     <a href="{{ route('admin.banner-slider.index')}}"><i class="bx bx-right-arrow-alt"></i>List</a>
                 </li>
                 <li> 
-                    <a href="{{ route('admin.banner-slider.create')}}"><i class="bx bx-right-arrow-alt"></i>Crate</a>
+                    <a href="{{ route('admin.banner-slider.create')}}"><i class="bx bx-right-arrow-alt"></i>Create</a>
                 </li>
             </ul>
         </li>

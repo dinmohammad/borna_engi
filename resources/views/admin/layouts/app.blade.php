@@ -25,6 +25,7 @@
 	<link rel="stylesheet" href="{{ asset('admin/assets/css/dark-theme.css') }}" />
 	<link rel="stylesheet" href="{{ asset('admin/assets/css/semi-dark.css') }}" />
 	<link rel="stylesheet" href="{{ asset('admin/assets/css/header-colors.css') }}" />
+	<link href="{{ asset('admin/assets/plugins/datatable/css/dataTables.bootstrap5.min.css') }}" rel="stylesheet" />
 	<title>{{ config('app.name', 'Laravel') }}</title>
 
 	@yield('style')
@@ -67,8 +68,24 @@
 	<script src="{{ asset('admin/assets/plugins/chartjs/js/Chart.min.js') }}"></script>
 	<script src="{{ asset('admin/assets/plugins/chartjs/js/Chart.extension.js') }}"></script>
 	<script src="{{ asset('admin/assets/js/index.js') }}"></script>
+	<script src="{{ asset('admin/assets/plugins/datatable/js/jquery.dataTables.min.js') }}"></script>
+	<script src="{{ asset('admin/assets/plugins/datatable/js/dataTables.bootstrap5.min.js') }}"></script>
 	<!--app JS-->
 	<script src="{{ asset('admin/assets/js/app.js') }}"></script>
+
+
+	<!-- Toastr CSS -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet"/>
+
+	<!-- Toastr JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+
+	<script>
+		$(document).ready(function() {
+			$('#dataTable').DataTable();
+		});
+	</script>
 
 	@yield('script')
 </body>
