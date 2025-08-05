@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Admin\BannerSectionController;
 
 Route::get('/', function () {
     return view('frontend.pages.landing.index');
@@ -23,9 +24,18 @@ Route::get('/contact-us', function () {
 });
 
 
-Route::get('admin/dashboard', function () {
-    return view('admin.dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+Route::middleware(['auth', 'verified'])->prefix('admin')->name('admin.')->group(function () {
+
+    Route::get('/dashboard', function () {
+        return view('admin.dashboard');
+    })->name('dashboard');
+
+    Route::get('/banner-slider/all', [BannerSectionController::class, 'index'])->name('banner-slider.index');
+    Route::get('/banner-slider/create', [BannerSectionController::class, 'create'])->name('banner-slider.create');
+    Route::post('/banner-slider/store', [BannerSectionController::class, 'store'])->name('banner-slider.store');
+
+});
+
 
 Route::middleware('auth')->group(function () {
     Route::get('admin/profile', [ProfileController::class, 'edit'])->name('profile.edit');
