@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\BannerSectionController;
+use App\Http\Controllers\Admin\YoutubeVideoController;
 
 Route::get('/', function () {
     return view('frontend.pages.landing.index');
@@ -30,6 +31,7 @@ Route::middleware(['auth', 'verified'])->prefix('admin')->name('admin.')->group(
         return view('admin.dashboard');
     })->name('dashboard');
 
+    // ========== Banner Slider ============
     Route::get('/banner-slider/all', [BannerSectionController::class, 'index'])->name('banner-slider.index');
     Route::get('/banner-slider/create', [BannerSectionController::class, 'create'])->name('banner-slider.create');
     Route::post('/banner-slider/store', [BannerSectionController::class, 'store'])->name('banner-slider.store');
@@ -38,6 +40,15 @@ Route::middleware(['auth', 'verified'])->prefix('admin')->name('admin.')->group(
     Route::get('/banner-slider/active/{id}', [BannerSectionController::class, 'active'])->name('banner-slider.active');
     Route::get('/banner-slider/inActive/{id}', [BannerSectionController::class, 'inActive'])->name('banner-slider.inActive');
 
+
+    // ========== Youtube Video Slider ============
+    Route::get('/youtube-video/all', [YoutubeVideoController::class, 'index'])->name('youtube-video.index');
+    Route::get('/youtube-video/create', [YoutubeVideoController::class, 'create'])->name('youtube-video.create');
+    Route::post('/youtube-video/store', [YoutubeVideoController::class, 'store'])->name('youtube-video.store');
+    Route::get('/youtube-video/edit/{id}', [YoutubeVideoController::class, 'edit'])->name('youtube-video.edit');
+    Route::put('/youtube-video/update/{id}', [YoutubeVideoController::class, 'update'])->name('youtube-video.update');
+    Route::get('/youtube-video/active/{id}', [YoutubeVideoController::class, 'active'])->name('youtube-video.active');
+    Route::get('/youtube-video/inActive/{id}', [YoutubeVideoController::class, 'inActive'])->name('youtube-video.inActive');
 });
 
 

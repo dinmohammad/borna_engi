@@ -29,6 +29,21 @@
                 </li>
             </ul>
         </li>
+        <li>
+            <a href="javascript:;" class="has-arrow">
+                <div class="parent-icon"><i class='bx bx-home-circle'></i>
+                </div>
+                <div class="menu-title">Youtube Video</div>
+            </a>
+            <ul>
+                <li> 
+                    <a href="{{ route('admin.youtube-video.index')}}"><i class="bx bx-right-arrow-alt"></i>List</a>
+                </li>
+                <li> 
+                    <a href="{{ route('admin.youtube-video.create')}}"><i class="bx bx-right-arrow-alt"></i>Create</a>
+                </li>
+            </ul>
+        </li>
     </ul>
     <!--end navigation-->
 </div>
