@@ -9,6 +9,7 @@ use Intervention\Image\Facades\Image;
 use App\Models\BannerSlider;
 use App\Models\Division;
 use App\Models\Districts;
+use App\Models\Products;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Validator;
@@ -46,53 +47,74 @@ class ProductController extends Controller
     }
 
 
-    // public function store(Request $request)
-    // {
-    //     // Step 1: Validate the input
-    //     $request->validate([
-    //         'title' => 'nullable|string|max:255',
-    //         'description' => 'nullable|string',
-    //         'status' => 'required|boolean',
-    //         'image' => 'nullable|image|mimes:jpeg,png,jpg,webp',
-    //     ], [
-    //         'image.mimes' => 'Only jpeg, png, jpg, and webp images are allowed.',
-    //         'status.required' => 'Please select a status.',
-    //     ]);
+    public function store(Request $request)
+    {
+        // dd($request->all());
+        // Step 1: Validate the input
+        $validatedData = $request->validate([
+            'division'      => 'required|string|max:255',
+            'districts'     => 'required|string|max:255',
+            'type'          => 'required|string|max:255',
+            'land_Area'     => 'required|string|max:255',
+            'aprt_size'     => 'nullable|numeric',
+            'units_num'     => 'nullable|string|max:255',
+            'parking'       => 'nullable|numeric',
+            'title'         => 'required|string|max:255',
+            'description'   => 'required|string',
+            'location'      => 'required|string|max:255',
+            'image'         => 'required|image|mimes:jpeg,png,jpg,webp|max:2048',
+            'status'        => 'nullable|boolean',
+        ], [
+            'division.required'     => 'Please select a division.',
+            'districts.required'    => 'Please select a district.',
+            'type.required'         => 'Please select a property type.',
+            'land_Area.required'    => 'Land area is required.',
+            'aprt_size.numeric'     => 'Apartment size must be a number.',
+            'units_num.string'      => 'Units must be text.',
+            'parking.numeric'       => 'Parking value must be a number.',
+            'title.required'        => 'The title field is required.',
+            'description.required'  => 'Please enter a description.',
+            'location.required'     => 'Please enter a location.',
+            'image.required'        => 'Please upload an image.',
+            'image.image'           => 'The uploaded file must be an image.',
+            'image.mimes'           => 'Image must be a JPEG, PNG, JPG, or WEBP file.',
+            'image.max'             => 'Image size should not exceed 2MB.',
+        ]);        
 
-    //     $imagePath = null;
+        $imagePath = null;
+        // Step 2: If image is uploaded, store it
+        if ($request->hasFile('image')) {
+            $image = $request->file('image');
+            $filename = time() . '_' . uniqid() . '.' . $image->getClientOriginalExtension();
+            $image->move(public_path('uploads/products'), $filename);
+            $imagePath = 'uploads/products/' . $filename;
+        }
 
-    //     // Step 2: If image is uploaded, store it
-    //     if ($request->hasFile('image')) {
-    //         $image = $request->file('image');
+        // Step 3: Save to database
+        $product = new Products();
+        $product->division = $request->division;
+        $product->district = $request->districts;
+        $product->type = $request->type;
+        $product->land_area = $request->land_Area;
+        $product->apartment_size = $request->aprt_size;
+        $product->untis = $request->units_num;
+        $product->parking_size = $request->parking;
+        $product->title = $request->title;
+        $product->descripiton = $request->description;
+        $product->address = $request->location;
+        $product->status = $request->status;
+        $product->updated_by_id = $this->user->id;
+        $product->updated_by_name = $this->user->name;
+        if ($imagePath) {
+            $product->image = $imagePath;
+        }
 
-    //         // Create unique filename
-    //         $filename = time() . '_' . uniqid() . '.' . $image->getClientOriginalExtension();
-
-    //         // Move image to public/uploads/banner_sliders
-    //         $image->move(public_path('uploads/banner_sliders'), $filename);
-
-    //         // Set image path to save in DB
-    //         $imagePath = 'uploads/banner_sliders/' . $filename;
-    //     }
-
-    //     // Step 3: Save to database
-    //     $banner_slider = new BannerSlider();
-    //     $banner_slider->title = $request->input('title');
-    //     $banner_slider->description = $request->input('description');
-    //     $banner_slider->status = $request->input('status');
-    //     if ($imagePath) {
-    //         $banner_slider->image = $imagePath;
-    //     }
-
-    //     if ($banner_slider->save()) {
-    //         return redirect()->route('admin.banner-slider.index')
-    //             ->with('success', 'Banner slider created successfully!');
-    //     } else {
-    //         return redirect()->back()
-    //             ->with('error', 'Banner slider creation failed!')
-    //             ->withInput();
-    //     }
-    // }
+        if ($product->save()) {
+            return redirect()->route('admin.product.index')->with('success', 'product created successfully!');
+        } else {
+            return redirect()->back()->with('error', 'product creation failed!')->withInput();
+        }
+    }
 
 
 
