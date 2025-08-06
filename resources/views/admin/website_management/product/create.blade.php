@@ -9,11 +9,11 @@
                     <div>
                         <i class="bx bxs-user me-1 font-22 text-primary"></i>
                     </div>
-                    <h5 class="mb-0 text-primary">New Banner Create</h5>
+                    <h5 class="mb-0 text-primary">New Product Create</h5>
                 </div>
                 <hr>
 
-                <form action="{{ route('admin.banner-slider.store') }}" method="POST" enctype="multipart/form-data" class="row g-3">
+                <form action="{{ route('admin.product.store') }}" method="POST" enctype="multipart/form-data" class="row g-3">
                     @csrf
 
                     <div class="col-md-12">
@@ -26,14 +26,17 @@
                         <textarea class="form-control" name="description" id="description" rows="3"></textarea>
                     </div>
 
+                    <div class="col-md-12">
+                        <label for="title" class="form-label">Location</label>
+                        <input type="text" class="form-control" name="title" id="title" >
+                    </div>
+
                     <div class="col-12">
                         <label for="image" class="form-label">Image</label>
-                        <input class="form-control @error('image') is-invalid @enderror" name="image" id="image" type="file" accept="image/*" onchange="previewImage(event)" required>
+                        <input class="form-control" name="image" id="image" type="file" accept="image/*" onchange="previewImage(event)">
                         <div id="image_help" class="form-text text-danger">File ratio 1920x1080</div>
                         <p id="dimension_error" style="color:red;"></p>
-                        @error('image')
-                            <p class="text-danger mt-1">{{ $message }}</p>
-                        @enderror
+
                         <div class="mt-2">
                             <img id="image_preview" src="#" alt="Preview" style="display: none; max-height: 200px; border: 1px solid #ddd; padding: 5px;">
                         </div>

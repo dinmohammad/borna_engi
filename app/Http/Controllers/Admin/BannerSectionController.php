@@ -44,49 +44,53 @@ class BannerSectionController extends Controller
 
     public function store(Request $request)
     {
-        // Step 1: Validate the file type and extension
+        // Step 1: Validate the input
         $request->validate([
+            'title' => 'nullable|string|max:255',
+            'description' => 'nullable|string',
+            'status' => 'required|boolean',
             'image' => 'nullable|image|mimes:jpeg,png,jpg,webp',
         ], [
             'image.mimes' => 'Only jpeg, png, jpg, and webp images are allowed.',
+            'status.required' => 'Please select a status.',
         ]);
 
-        // Step 2: If image is uploaded, check its dimensions
+        $imagePath = null;
+
+        // Step 2: If image is uploaded, store it
         if ($request->hasFile('image')) {
             $image = $request->file('image');
 
-            // Get image dimensions
-            list($width, $height) = getimagesize($image);
-
-            // Check if it matches 1920x1080
-            if ($width !== 1920 || $height !== 1080) {
-                return redirect()->back()
-                    ->withInput()
-                    ->withErrors(['image' => 'Image must be exactly 1920x1080 pixels.']);
-            }
-
-            // Generate a unique name and move to folder
+            // Create unique filename
             $filename = time() . '_' . uniqid() . '.' . $image->getClientOriginalExtension();
+
+            // Move image to public/uploads/banner_sliders
             $image->move(public_path('uploads/banner_sliders'), $filename);
+
+            // Set image path to save in DB
+            $imagePath = 'uploads/banner_sliders/' . $filename;
         }
 
-        // Create and save model
+        // Step 3: Save to database
         $banner_slider = new BannerSlider();
         $banner_slider->title = $request->input('title');
         $banner_slider->description = $request->input('description');
         $banner_slider->status = $request->input('status');
-        if (isset($filename)) {
-            $banner_slider->image = 'uploads/banner_sliders/' . $filename;
-        }
-        
-
-        if($banner_slider->save()){
-            return redirect()->route('admin.banner-slider.index')->with('success', 'Banner slider created successfully!');
-        }else{
-            return redirect()->back()->with('error', 'Banner slider create failed!');
+        if ($imagePath) {
+            $banner_slider->image = $imagePath;
         }
 
+        if ($banner_slider->save()) {
+            return redirect()->route('admin.banner-slider.index')
+                ->with('success', 'Banner slider created successfully!');
+        } else {
+            return redirect()->back()
+                ->with('error', 'Banner slider creation failed!')
+                ->withInput();
+        }
     }
+
+
 
     public function edit(Request $request, $id)
     {
@@ -99,44 +103,55 @@ class BannerSectionController extends Controller
 
     public function update(Request $request, $id)
     {
-        $banner_slider = BannerSlider::findOrFail($id);
-
+        // Step 1: Validate the input
         $request->validate([
+            'title' => 'nullable|string|max:255',
+            'description' => 'nullable|string',
+            'status' => 'required|boolean',
             'image' => 'nullable|image|mimes:jpeg,png,jpg,webp',
         ], [
             'image.mimes' => 'Only jpeg, png, jpg, and webp images are allowed.',
+            'status.required' => 'Please select a status.',
         ]);
 
+        // Step 2: Find the banner
+        $banner_slider = BannerSlider::findOrFail($id);
+
+        // Step 3: If image is uploaded, store it and delete the old one
         if ($request->hasFile('image')) {
             $image = $request->file('image');
-            list($width, $height) = getimagesize($image);
 
-            if ($width !== 1920 || $height !== 1080) {
-                return redirect()->back()
-                    ->withInput()
-                    ->withErrors(['image' => 'Image must be exactly 1920x1080 pixels.']);
-            }
-
+            // Create unique filename
             $filename = time() . '_' . uniqid() . '.' . $image->getClientOriginalExtension();
+
+            // Move new image to public/uploads/banner_sliders
             $image->move(public_path('uploads/banner_sliders'), $filename);
 
+            // Delete old image if exists
             if ($banner_slider->image && file_exists(public_path($banner_slider->image))) {
                 unlink(public_path($banner_slider->image));
             }
 
+            // Set new image path
             $banner_slider->image = 'uploads/banner_sliders/' . $filename;
         }
 
+        // Step 4: Update other fields
         $banner_slider->title = $request->input('title');
         $banner_slider->description = $request->input('description');
         $banner_slider->status = $request->input('status');
 
+        // Step 5: Save
         if ($banner_slider->save()) {
-            return redirect()->route('admin.banner-slider.index')->with('success', 'Banner slider updated successfully!');
+            return redirect()->route('admin.banner-slider.index')
+                ->with('success', 'Banner slider updated successfully!');
         } else {
-            return redirect()->back()->with('error', 'Banner slider update failed!');
+            return redirect()->back()
+                ->with('error', 'Banner slider update failed!')
+                ->withInput();
         }
     }
+
 
     public function inActive(Request $request, $id)
     {

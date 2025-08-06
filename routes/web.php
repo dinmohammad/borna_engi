@@ -4,6 +4,7 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\BannerSectionController;
 use App\Http\Controllers\Admin\YoutubeVideoController;
+use App\Http\Controllers\Admin\ProductController;
 
 Route::get('/', function () {
     return view('frontend.pages.landing.index');
@@ -30,6 +31,16 @@ Route::middleware(['auth', 'verified'])->prefix('admin')->name('admin.')->group(
     Route::get('/dashboard', function () {
         return view('admin.dashboard');
     })->name('dashboard');
+
+
+     // ========== Product Controller ============
+     Route::get('/product/all', [ProductController::class, 'index'])->name('product.index');
+     Route::get('/product/create', [ProductController::class, 'create'])->name('product.create');
+     Route::post('/product/store', [ProductController::class, 'store'])->name('product.store');
+     Route::get('/product/edit/{id}', [ProductController::class, 'edit'])->name('product.edit');
+     Route::put('/product/update/{id}', [ProductController::class, 'update'])->name('product.update');
+     Route::get('/product/active/{id}', [ProductController::class, 'active'])->name('product.active');
+     Route::get('/product/inActive/{id}', [ProductController::class, 'inActive'])->name('product.inActive');
 
     // ========== Banner Slider ============
     Route::get('/banner-slider/all', [BannerSectionController::class, 'index'])->name('banner-slider.index');
