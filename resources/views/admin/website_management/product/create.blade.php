@@ -177,7 +177,7 @@
                     success: function (data) {                        
                         $('#districts').html('<option value="">Choose any district...</option>');
                         $.each(data, function (key, district) {
-                            $('#districts').append('<option value="' + district.id + '">' + district.name + '</option>');
+                            $('#districts').append('<option value="' + district.name + '">' + district.name + '</option>');
                         });
                     },
                     error: function () {

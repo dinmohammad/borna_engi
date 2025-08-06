@@ -14,27 +14,29 @@
                             <th>Image</th>
                             <th>Title</th>
                             <th>Description</th>
+                            <th>Division</th>
+                            <th>Districts</th>
                             <th>Create at</th>
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach($sliders as $item)
+                        @foreach($products as $item)
                         <tr>
                             <td>{{ $loop->index + 1 }}</td>
                             <td>
-                                <a href="{{ url('admin/banner-slider/edit/' . $item->id) }}">
+                                <a href="{{ url('admin/product/edit/' . $item->id) }}">
                                     <button type="button" class="btn btn-primary btn-sm ">
                                         Edit
                                     </button>
                                 </a>
                                 @if ($item->status == 0)
-                                    <a href="{{ url('admin/banner-slider/active/' . $item->id) }}">
+                                    <a href="{{ url('admin/product/active/' . $item->id) }}">
                                         <button type="button" class="btn btn-success btn-sm ">
                                             Active
                                         </button>
                                     </a>
                                 @elseif ($item->status == 1)
-                                    <a href="{{ url('admin/banner-slider/inActive/' . $item->id) }}">
+                                    <a href="{{ url('admin/product/inActive/' . $item->id) }}">
                                         <button type="button" class="btn btn-danger btn-sm ">
                                             Inactive
                                         </button>
@@ -54,9 +56,11 @@
                             <td>{{$item->title}}</td>
                             <td>
                                 <div style="width: 200px;white-space: normal;">
-                                {{$item->description}}
+                                {{$item->descripiton}}
                                 </div>
                             </td>
+                            <td>{{$item->division}}</td>
+                            <td>{{$item->district}}</td>
                             <td>{{$item->created_at}}</td>
                         </tr>
                         @endforeach
@@ -69,6 +73,8 @@
                             <th>Image</th>
                             <th>Title</th>
                             <th>Description</th>
+                            <th>Division</th>
+                            <th>Districts</th>
                             <th>Create at</th>
                         </tr>
                     </tfoot>
