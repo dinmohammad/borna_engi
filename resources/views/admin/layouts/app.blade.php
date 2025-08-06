@@ -14,7 +14,6 @@
 	<link href="{{ asset('admin/assets/plugins/metismenu/css/metisMenu.min.css') }}" rel="stylesheet" />
 	<!-- loader-->
 	<link href="{{ asset('admin/assets/css/pace.min.css') }}" rel="stylesheet" />
-	<script src="assets/js/pace.min.js') }}"></script>
 	<!-- Bootstrap CSS -->
 	<link href="{{ asset('admin/assets/css/bootstrap.min.css') }}" rel="stylesheet">
 	<link href="{{ asset('admin/assets/css/bootstrap-extended.css') }}" rel="stylesheet">
@@ -39,6 +38,7 @@
 		<!--end sidebar wrapper -->
 		<!--start header -->
 		@include('admin.includes.nav')
+		 
 		<!--end header -->
 		<!--start page wrapper -->
 		<div class="page-wrapper">
@@ -55,10 +55,10 @@
 	</div>
 	<!--end wrapper-->
 
-	<!-- Bootstrap JS -->
-	<script src="{{ asset('admin/assets/js/bootstrap.bundle.min.js') }}"></script>
 	<!--plugins-->
 	<script src="{{ asset('admin/assets/js/jquery.min.js') }}"></script>
+	<!-- Bootstrap JS -->
+	<script src="{{ asset('admin/assets/js/bootstrap.bundle.min.js') }}"></script>
 	<script src="{{ asset('admin/assets/plugins/simplebar/js/simplebar.min.js') }}"></script>
 	<script src="{{ asset('admin/assets/plugins/metismenu/js/metisMenu.min.js') }}"></script>
 	<script src="{{ asset('admin/assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js') }}"></script>
@@ -72,6 +72,7 @@
 	<script src="{{ asset('admin/assets/plugins/datatable/js/dataTables.bootstrap5.min.js') }}"></script>
 	<!--app JS-->
 	<script src="{{ asset('admin/assets/js/app.js') }}"></script>
+	<script src="{{ asset('admin/assets/js/pace.min.js') }}"></script>
 
 
 	<!-- Toastr CSS -->
