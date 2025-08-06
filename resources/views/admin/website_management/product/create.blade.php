@@ -16,32 +16,121 @@
                 <form action="{{ route('admin.product.store') }}" method="POST" enctype="multipart/form-data" class="row g-3">
                     @csrf
 
+                    <!-- Division -->
+                    <div class="col-md-6">
+                        <label for="division" class="form-label">Division <span class="text-danger">*</span></label>
+                        <select name="division" id="division" class="form-select" required>
+                            <option value="">Choose any division...</option>
+                            @foreach($divisions as $row)
+                                <option value="{{ $row->name }}" data-id="{{ $row->id }}">{{ $row->name }}</option>
+                            @endforeach
+                        </select>
+                        @error('division')
+                            <p class="text-danger mt-1">{{ $message }}</p>
+                        @enderror
+                    </div>
+
+                    <!-- Districts -->
+                    <div class="col-md-6">
+                        <label for="districts" class="form-label">District  <span class="text-danger">*</span></label>
+                        <select name="districts" id="districts" class="form-select" required>
+                            <option value="">Choose any district...</option>
+                        </select>
+                        @error('districts')
+                            <p class="text-danger mt-1">{{ $message }}</p>
+                        @enderror
+                    </div>
+
+                    <!-- Type -->
+                    <div class="col-md-6">
+                        <label for="type" class="form-label">Type <span class="text-danger">*</span></label>
+                        <select name="type" id="type" class="form-select" required>
+                            <option value="">Choose any type...</option>
+                            <option value="Residential Building">Residential Building</option>
+                            <option value="Commercial Building">Commercial Building</option>
+                            <option value="Landowner Building">Landowner Building</option>
+                        </select>
+                        @error('type')
+                            <p class="text-danger mt-1">{{ $message }}</p>
+                        @enderror
+                    </div>
+
+                    <!-- Land Area -->
+                    <div class="col-md-6">
+                        <label for="land_Area" class="form-label">Land Area <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" name="land_Area" id="land_Area" placeholder="e.g. 5 Katha, 3600 sqft" required>
+                        @error('land_Area')
+                            <p class="text-danger mt-1">{{ $message }}</p>
+                        @enderror
+                    </div>
+
+                    <!-- Apartment Size -->
+                    <div class="col-md-6">
+                        <label for="aprt_size" class="form-label">Apartment Size</label>
+                        <input type="number" class="form-control" name="aprt_size" id="aprt_size" placeholder="e.g. 1200 (sqft)">
+                        @error('aprt_size')
+                            <p class="text-danger mt-1">{{ $message }}</p>
+                        @enderror
+                    </div>
+
+                    <!-- Units -->
+                    <div class="col-md-6">
+                        <label for="units_num" class="form-label">Units</label>
+                        <input type="text" class="form-control" name="units_num" id="units_num" placeholder="e.g. 8 units">
+                        @error('units_num')
+                            <p class="text-danger mt-1">{{ $message }}</p>
+                        @enderror
+                    </div>
+
+                    <!-- Parking -->
                     <div class="col-md-12">
-                        <label for="title" class="form-label">Title</label>
-                        <input type="text" class="form-control" name="title" id="title" >
+                        <label for="parking" class="form-label">Parking Spaces</label>
+                        <input type="number" class="form-control" name="parking" id="parking" placeholder="e.g. 5 parking spaces">
+                        @error('parking')
+                            <p class="text-danger mt-1">{{ $message }}</p>
+                        @enderror
                     </div>
 
-                    <div class="col-12">
-                        <label for="description" class="form-label">Description</label>
-                        <textarea class="form-control" name="description" id="description" rows="3"></textarea>
-                    </div>
-
+                    <!-- Title -->
                     <div class="col-md-12">
-                        <label for="title" class="form-label">Location</label>
-                        <input type="text" class="form-control" name="title" id="title" >
+                        <label for="title" class="form-label">Title <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" name="title" id="title" placeholder="Enter project title" required>
+                        @error('title')
+                            <p class="text-danger mt-1">{{ $message }}</p>
+                        @enderror
                     </div>
 
+                    <!-- Description -->
                     <div class="col-12">
-                        <label for="image" class="form-label">Image</label>
-                        <input class="form-control" name="image" id="image" type="file" accept="image/*" onchange="previewImage(event)">
-                        <div id="image_help" class="form-text text-danger">File ratio 1920x1080</div>
-                        <p id="dimension_error" style="color:red;"></p>
+                        <label for="description" class="form-label">Description <span class="text-danger">*</span></label>
+                        <textarea class="form-control" name="description" id="description" rows="3" placeholder="Write a short description about the project..." required></textarea>
+                        @error('description')
+                            <p class="text-danger mt-1">{{ $message }}</p>
+                        @enderror
+                    </div>
 
+                    <!-- Location -->
+                    <div class="col-md-12">
+                        <label for="location" class="form-label">Location <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" name="location" id="location" placeholder="e.g. Bashundhara, Dhaka" required>
+                        @error('location')
+                            <p class="text-danger mt-1">{{ $message }}</p>
+                        @enderror
+                    </div>
+
+                    <!-- Image -->
+                    <div class="col-12">
+                        <label for="image" class="form-label">Image <span class="text-danger">*</span></label>
+                        <input class="form-control" name="image" id="image" type="file" accept="image/*" onchange="previewImage(event)" required>
+                        @error('image')
+                            <p class="text-danger mt-1">{{ $message }}</p>
+                        @enderror
                         <div class="mt-2">
                             <img id="image_preview" src="#" alt="Preview" style="display: none; max-height: 200px; border: 1px solid #ddd; padding: 5px;">
                         </div>
                     </div>
 
+                    <!-- Status -->
                     <div class="col-12">
                         <label for="status" class="form-label">Status</label>
                         <select name="status" id="status" class="form-select">
@@ -50,8 +139,9 @@
                         </select>
                     </div>
 
+                    <!-- Submit -->
                     <div class="col-12">
-                        <button type="submit" class="btn btn-primary px-5">Save Banner</button>
+                        <button type="submit" class="btn btn-primary px-5">Save Product</button>
                     </div>
                 </form>
 
@@ -63,40 +153,55 @@
 
 @section('script')
 <script>
+    $(document).ready(function () {
+        $('#division').on('change', function () {
+            var dataId = $('#division option:selected').data('id');
+            console.log('Selected division data-id:', dataId);
+            
+
+            $('#districts').html('<option value="">Loading...</option>');
+
+            if (dataId) {
+                $.ajax({
+                    url: '/admin/get-districts-by-division/' + dataId,
+                    type: 'GET',
+                    dataType: 'json',
+                    success: function (data) {                        
+                        $('#districts').html('<option value="">Choose any district...</option>');
+                        $.each(data, function (key, district) {
+                            $('#districts').append('<option value="' + district.id + '">' + district.name + '</option>');
+                        });
+                    },
+                    error: function () {
+                        $('#districts').html('<option value="">Failed to load districts</option>');
+                    }
+                });
+            } else {
+                $('#districts').html('<option value="">Choose any district...</option>');
+            }
+        });
+    });
+</script>
+
+
+<script>
     function previewImage(event) {
         const input = event.target;
         const preview = document.getElementById('image_preview');
-        const error = document.getElementById('dimension_error');
-
-        preview.style.display = 'none';
-        error.textContent = '';
 
         if (input.files && input.files[0]) {
-            const file = input.files[0];
             const reader = new FileReader();
-
             reader.onload = function (e) {
-                const img = new Image();
-                img.src = e.target.result;
-
-                img.onload = function () {
-                    const width = img.width;
-                    const height = img.height;
-
-                    if (width === 1920 && height === 1080) {
-                        preview.src = img.src;
-                        preview.style.display = 'block';
-                    } else {
-                        alert('Image must be exactly 1920x1080 pixels.');
-                        error.textContent = 'Image must be exactly 1920x1080 pixels.';
-                        input.value = ''; // Clear the input
-                    }
-                };
+                preview.src = e.target.result;
+                preview.style.display = 'block';
             };
-
-            reader.readAsDataURL(file);
+            reader.readAsDataURL(input.files[0]);
+        } else {
+            preview.src = '#';
+            preview.style.display = 'none';
         }
     }
-
 </script>
+
+
 @endsection

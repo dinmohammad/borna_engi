@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Intervention\Image\Facades\Image;
 use App\Models\BannerSlider;
+use App\Models\Division;
+use App\Models\Districts;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Validator;
@@ -32,8 +34,17 @@ class ProductController extends Controller
 
     public function create()
     {
-        return view('admin.website_management.product.create');
+        $divisions = Division::latest()->get();
+        
+        return view('admin.website_management.product.create', compact('divisions'));
     }
+
+    public function getDistrictsByDivision($id)
+    {
+        $districts = Districts::where('division_id', $id)->get(['id', 'name']);
+        return response()->json($districts);
+    }
+
 
     // public function store(Request $request)
     // {

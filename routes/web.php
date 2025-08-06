@@ -41,6 +41,7 @@ Route::middleware(['auth', 'verified'])->prefix('admin')->name('admin.')->group(
      Route::put('/product/update/{id}', [ProductController::class, 'update'])->name('product.update');
      Route::get('/product/active/{id}', [ProductController::class, 'active'])->name('product.active');
      Route::get('/product/inActive/{id}', [ProductController::class, 'inActive'])->name('product.inActive');
+     Route::get('/get-districts-by-division/{id}', [ProductController::class, 'getDistrictsByDivision'])->name('districtsByDivision.get');
 
     // ========== Banner Slider ============
     Route::get('/banner-slider/all', [BannerSectionController::class, 'index'])->name('banner-slider.index');
