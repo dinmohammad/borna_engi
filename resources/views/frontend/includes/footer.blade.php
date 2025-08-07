@@ -22,7 +22,7 @@
                     </p>
                     <small class="text-white f-get-text">GET IN TOUCH</small>
                     <p class="text-white f-p-text mt-4 mb-0">House 879, Road 12 Ave 2, Mirpur DOHS Dhaka 1216</p>
-                    <p class="text-white f-p-text">(208) 555-0112</p>
+                    <p class="text-white f-p-text">+8801763851107</p>
                 </div>
             </div>
 

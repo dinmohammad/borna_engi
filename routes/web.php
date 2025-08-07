@@ -6,6 +6,10 @@ use App\Http\Controllers\Admin\BannerSectionController;
 use App\Http\Controllers\Admin\YoutubeVideoController;
 use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\ClientTestimonialsController;
+use App\Http\Controllers\Admin\ContactMassageController;
+
+
+
 
 Route::get('/', function () {
     return view('frontend.pages.landing.index');
@@ -71,6 +75,9 @@ Route::middleware(['auth', 'verified'])->prefix('admin')->name('admin.')->group(
     Route::put('/testimonials/update/{id}', [ClientTestimonialsController::class, 'update'])->name('testimonials.update');
     Route::get('/testimonials/active/{id}', [ClientTestimonialsController::class, 'active'])->name('testimonials.active');
     Route::get('/testimonials/inActive/{id}', [ClientTestimonialsController::class, 'inActive'])->name('testimonials.inActive');
+
+    // ========== Testimonials ============
+    Route::get('/contact-us/all', [ContactMassageController::class, 'index'])->name('contact-message.index');
 });
 
 

@@ -75,6 +75,12 @@
                 </li>
             </ul>
         </li>
+        <li>
+            <a href="{{ route('admin.contact-message.index') }}">
+                <div class="parent-icon"><i class='bx bx-home-circle'></i></div>
+                <div class="menu-title">Contact Messages</div>
+            </a>
+        </li>
     </ul>
     <!--end navigation-->
 </div>
