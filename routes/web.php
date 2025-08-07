@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\BannerSectionController;
 use App\Http\Controllers\Admin\YoutubeVideoController;
 use App\Http\Controllers\Admin\ProductController;
+use App\Http\Controllers\Admin\ClientTestimonialsController;
 
 Route::get('/', function () {
     return view('frontend.pages.landing.index');
@@ -61,6 +62,15 @@ Route::middleware(['auth', 'verified'])->prefix('admin')->name('admin.')->group(
     Route::put('/youtube-video/update/{id}', [YoutubeVideoController::class, 'update'])->name('youtube-video.update');
     Route::get('/youtube-video/active/{id}', [YoutubeVideoController::class, 'active'])->name('youtube-video.active');
     Route::get('/youtube-video/inActive/{id}', [YoutubeVideoController::class, 'inActive'])->name('youtube-video.inActive');
+
+    // ========== Testimonials ============
+    Route::get('/testimonials/all', [ClientTestimonialsController::class, 'index'])->name('testimonials.index');
+    Route::get('/testimonials/create', [ClientTestimonialsController::class, 'create'])->name('testimonials.create');
+    Route::post('/testimonials/store', [ClientTestimonialsController::class, 'store'])->name('testimonials.store');
+    Route::get('/testimonials/edit/{id}', [ClientTestimonialsController::class, 'edit'])->name('testimonials.edit');
+    Route::put('/testimonials/update/{id}', [ClientTestimonialsController::class, 'update'])->name('testimonials.update');
+    Route::get('/testimonials/active/{id}', [ClientTestimonialsController::class, 'active'])->name('testimonials.active');
+    Route::get('/testimonials/inActive/{id}', [ClientTestimonialsController::class, 'inActive'])->name('testimonials.inActive');
 });
 
 
