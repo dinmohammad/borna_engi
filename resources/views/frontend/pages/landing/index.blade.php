@@ -5,47 +5,18 @@
     <section class="hero-wrapper position-relative text-white">
         <div class="swiper mySwiper" id="banner_swiper">
             <div class="swiper-wrapper">
+                @foreach($sliders as $item)
                 <div class="swiper-slide">
-                    <div class="hero-slider-single hero-image-one">
+                    <div class="hero-slider-single hero-image-one" style="background-image: url('{{ $item->image }}')">
                     </div>
                     <div class="hero-mid-content translate-middle-y position-absolute top-50 text-center">
                         <div class="hero-mc-header">
-                            <h1 class="display-4 ">Find Your Dream Home</h1>
-                            <p class="lead">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>
+                            <h1 class="display-4 ">{{$item->title}}</h1>
+                            <p class="lead">{{$item->description}}</p>
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide">
-                    <div class="hero-slider-single hero-image-two">
-                    </div>
-                    <div class="hero-mid-content translate-middle-y position-absolute top-50 text-center">
-                        <div class="hero-mc-header">
-                            <h1 class="display-4 ">Find Your Dream Home</h1>
-                            <p class="lead">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="hero-slider-single hero-image-three">
-                    </div>
-                    <div class="hero-mid-content translate-middle-y position-absolute top-50 text-center">
-                        <div class="hero-mc-header">
-                            <h1 class="display-4 ">Find Your Dream Home</h1>
-                            <p class="lead">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="hero-slider-single hero-image-four">
-                    </div>
-                    <div class="hero-mid-content translate-middle-y position-absolute top-50 text-center">
-                        <div class="hero-mc-header">
-                            <h1 class="display-4 ">Find Your Dream Home</h1>
-                            <p class="lead">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>
-                        </div>
-                    </div>
-                </div>
-
+                @endforeach
             </div>
             
         </div>

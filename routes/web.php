@@ -7,13 +7,12 @@ use App\Http\Controllers\Admin\YoutubeVideoController;
 use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\ClientTestimonialsController;
 use App\Http\Controllers\Admin\ContactMassageController;
+use App\Http\Controllers\Admin\WebsiteController;
 
 
 
+Route::get('/', [WebsiteController::class, 'BannerSliderGet'])->name('banner-slider.get');
 
-Route::get('/', function () {
-    return view('frontend.pages.landing.index');
-});
 Route::get('/about-us', function () {
     return view('frontend.pages.about.index');
 });

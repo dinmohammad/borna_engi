@@ -270,7 +270,7 @@ select.form-control{
     background-position: top;
     background-size: cover;
 }
-.hero-image-one{
+/* .hero-image-one{
     background-image: url(../images/banner/1.jpg);
 }
 .hero-image-two{
@@ -281,11 +281,13 @@ select.form-control{
 }
 .hero-image-four{
     background-image: url(../images/banner/4.jpg);
-}
+} */
 .hero-mid-content {
     background: #00000063;
     padding: 16px 24px;
     border-radius: 5px;
+    width: 50%;
+    max-width: 100%;
 }
 /* .hero-wrapper .swiper-slide img {
     height: 928px;
