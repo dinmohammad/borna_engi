@@ -18,7 +18,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach($data as $item)
+                        @foreach($sliders as $item)
                         <tr>
                             <td>{{ $loop->index + 1 }}</td>
                             <td>

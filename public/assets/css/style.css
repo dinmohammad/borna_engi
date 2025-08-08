@@ -433,6 +433,11 @@ select.form-control{
 .why-choose-text {
     padding-left: 100px;
 }
+.single-why-choose-image img{
+    height: 423px;
+    width: auto;
+    object-fit: cover;
+}
 /* ========= Why Choose Css END ======== */
 
 

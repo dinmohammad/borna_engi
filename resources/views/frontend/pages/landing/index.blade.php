@@ -85,76 +85,22 @@
                     <div class="section-content section-content-top-margin">
                         <div class="swiper product_slider overflow-visible">
                             <div class="swiper-wrapper">
+                                @foreach($products as $item)
                                 <div class="swiper-slide">
                                     <div class="single-item-box position-relative">
                                         <div class="stb-image hover-image-animation">
-                                            <img src="{{ asset('assets/images/products/1.jpeg') }}" width="100%" height="auto" alt="borna engineering product ">
+                                            <img src="{{ asset($item->image) }}" width="100%" height="auto" alt="borna engineering product ">
                                         </div>
                                         <div class="stb-bottom-content">
-                                            <h5>Vintage Villa</h5>
+                                            <h5>{{$item->title}}</h5>
                                             <div class="icon-with-text-wrap">
                                                 <i class="fa fa-map-marker"></i>
-                                                <span>2715 Ash Dr. San Jose, Dubai</span>
+                                                <span>{{$item->address}}</span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
-                                    <div class="single-item-box position-relative">
-                                        <div class="stb-image hover-image-animation">
-                                            <img src="{{ asset('assets/images/products/2.jpeg') }}" width="100%" height="auto" alt="borna engineering product ">
-                                        </div>
-                                        <div class="stb-bottom-content">
-                                            <h5>Vintage Villa</h5>
-                                            <div class="icon-with-text-wrap">
-                                                <i class="fa fa-map-marker"></i>
-                                                <span>2715 Ash Dr. San Jose, Dubai</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="single-item-box position-relative">
-                                        <div class="stb-image hover-image-animation">
-                                            <img src="{{ asset('assets/images/products/3.jpeg') }}" width="100%" height="auto" alt="borna engineering product ">
-                                        </div>
-                                        <div class="stb-bottom-content">
-                                            <h5>Vintage Villa</h5>
-                                            <div class="icon-with-text-wrap">
-                                                <i class="fa fa-map-marker"></i>
-                                                <span>2715 Ash Dr. San Jose, Dubai</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="single-item-box position-relative">
-                                        <div class="stb-image hover-image-animation">
-                                            <img src="{{ asset('assets/images/products/4.jpeg') }}" width="100%" height="auto" alt="borna engineering product ">
-                                        </div>
-                                        <div class="stb-bottom-content">
-                                            <h5>Vintage Villa</h5>
-                                            <div class="icon-with-text-wrap">
-                                                <i class="fa fa-map-marker"></i>
-                                                <span>2715 Ash Dr. San Jose, Dubai</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="single-item-box position-relative">
-                                        <div class="stb-image hover-image-animation">
-                                            <img src="{{ asset('assets/images/products/5.jpeg') }}" width="100%" height="auto" alt="borna engineering product ">
-                                        </div>
-                                        <div class="stb-bottom-content">
-                                            <h5>Vintage Villa</h5>
-                                            <div class="icon-with-text-wrap">
-                                                <i class="fa fa-map-marker"></i>
-                                                <span>2715 Ash Dr. San Jose, Dubai</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                @endforeach
                             </div>
 
                            
@@ -225,26 +171,13 @@
                     <div class="why-choose-image">
                         <div class="swiper why_choose_slider">
                             <div class="swiper-wrapper">
+                                @foreach($sliders as $item)
                                 <div class="swiper-slide single-why-choose-image">
                                     <div class="hover-image-animation">
-                                        <img src="{{ asset('assets/images/start_product/1.jpg') }}" width="100%" height="auto" alt="borna engineering product ">
+                                        <img src="{{ asset($item->image) }}" width="100%" height="auto" alt="borna engineering product ">
                                     </div>
                                 </div>
-                                <div class="swiper-slide single-why-choose-image">
-                                    <div class="hover-image-animation">
-                                        <img src="{{ asset('assets/images/start_product/2.jpg') }}" width="100%" height="auto" alt="borna engineering product ">
-                                    </div>
-                                </div>
-                                <div class="swiper-slide single-why-choose-image">
-                                    <div class="hover-image-animation">
-                                        <img src="{{ asset('assets/images/start_product/3.jpg') }}" width="100%" height="auto" alt="borna engineering product ">
-                                    </div>
-                                </div>
-                                <div class="swiper-slide single-why-choose-image">
-                                    <div class="hover-image-animation">
-                                        <img src="{{ asset('assets/images/start_product/4.jpg') }}" width="100%" height="auto" alt="borna engineering product ">
-                                    </div>
-                                </div>
+                                @endforeach
                             </div>
 
                         </div>
@@ -405,32 +338,21 @@
                     <div class="col-md-12">
                         <div class="swiper client_testimonials_slider" id="client_testimonials_slider">
                             <div class="swiper-wrapper">
+                                @foreach($testimonials as $item)
                                 <div class="swiper-slide single-test-image d-block d-md-flex align-items-start gap-3">
                                     <div class="swci-text position-relative bg-white p-5">
-                                        <p>I uploaded my floor plans, chose stunning furniture and decor, and within minutes, I had photorealistic renderings that showcased the potential of the remodeled space.</p>
+                                        <p>{{ $item->quote}}</p>
 
-                                        <h6>Hannah Burress</h6>
-                                        <span>Freelancer</span>
+                                        <h6>{{ $item->client_name}}</h6>
+                                        <span>{{ $item->client_position}}</span>
 
                                         <div class="quotes-icon-wrap position-absolute text-end w-100">
                                             <img class="object-fit-cover" src="{{ asset('assets/images/icons/quotes_1.png') }}" height="80" width="80"  alt="borna engineering product ">
                                         </div>
                                     </div>
-                                    <img class="object-fit-cover" src="{{ asset('assets/images/testimonials/client-1.png') }}" height="286" width="286"  alt="borna engineering product ">
+                                    <img class="object-fit-cover" src="{{ asset($item->image) }}" height="286" width="286"  alt="borna engineering product ">
                                 </div>
-                                <div class="swiper-slide single-test-image d-block d-md-flex align-items-start gap-3">
-                                    <div class="swci-text position-relative bg-white p-5">
-                                        <p>I uploaded my floor plans, chose stunning furniture and decor, and within minutes, I had photorealistic renderings that showcased the potential of the remodeled space.</p>
-
-                                        <h6>Hannah Burress</h6>
-                                        <span>Freelancer</span>
-
-                                        <div class="quotes-icon-wrap position-absolute text-end w-100">
-                                            <img class="object-fit-cover" src="{{ asset('assets/images/icons/quotes_1.png') }}" height="80" width="80"  alt="borna engineering product ">
-                                        </div>
-                                    </div>
-                                    <img class="object-fit-cover" src="{{ asset('assets/images/testimonials/client-1.png') }}" height="286" width="286"  alt="borna engineering product ">
-                                </div>
+                                @endforeach
                             </div>
                         </div>
                     </div>
