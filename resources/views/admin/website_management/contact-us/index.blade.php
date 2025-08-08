@@ -11,7 +11,9 @@
                             <th>ID</th>
                             <th>Action</th>
                             <th>Status</th>
-                            <th>URL</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Message</th>
                             <th>Create at</th>
                         </tr>
                     </thead>
@@ -20,58 +22,36 @@
                         <tr>
                             <td>{{ $loop->index + 1 }}</td>
                             <td>
-                                <a href="{{ url('admin/youtube-video/edit/' . $item->id) }}">
-                                    <button type="button" class="btn btn-primary btn-sm ">
-                                        Edit
-                                    </button>
-                                </a>
-                                @if ($item->status == 0)
-                                    <a href="{{ url('admin/youtube-video/active/' . $item->id) }}">
-                                        <button type="button" class="btn btn-success btn-sm ">
-                                            Active
-                                        </button>
-                                    </a>
-                                @elseif ($item->status == 1)
-                                    <a href="{{ url('admin/youtube-video/inActive/' . $item->id) }}">
+                                @if ($item->status == 1)
+                                    <a href="{{ url('admin/contact-us/reviewed/' . $item->id) }}">
                                         <button type="button" class="btn btn-danger btn-sm ">
-                                            Inactive
+                                            Reviewed
                                         </button>
                                     </a>
                                 @endif
                             </td>
                             <td>
                                 @if ($item->status == 0)
-                                    <span class="badge bg-danger">Inactive</span>
+                                    <span class="badge bg-warning">Reviewed</span>
                                 @elseif ($item->status == 1)
-                                    <span class="badge bg-success">Active</span>
+                                    <span class="badge bg-success">New</span>
                                 @endif
                             </td>
-                            <td>
-                                @php
-                                    // Extract video ID from URL
-                                    parse_str(parse_url($item->url, PHP_URL_QUERY), $queryParams);
-                                    $videoId = $queryParams['v'] ?? null;
-                                @endphp
-
-                                @if($videoId)
-                                    <iframe width="300" height="180" 
-                                            src="https://www.youtube.com/embed/{{ $videoId }}" 
-                                            frameborder="0" allowfullscreen>
-                                    </iframe>
-                                @else
-                                    <span class="text-danger">Invalid YouTube URL</span>
-                                @endif
-                            </td>
+                            <td>{{$item->first_name}} {{$item->last_name}}</td>
+                            <td>{{$item->email}}</td>
+                            <td>{{$item->message}}</td>
                             <td>{{$item->created_at}}</td>
                         </tr>
                         @endforeach
                     </tbody>
                     <tfoot>
                         <tr>
-                        <th>ID</th>
+                            <th>ID</th>
                             <th>Action</th>
                             <th>Status</th>
-                            <th>URL</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Message</th>
                             <th>Create at</th>
                         </tr>
                     </tfoot>

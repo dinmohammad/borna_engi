@@ -30,6 +30,14 @@ class ContactMassageController extends Controller
         //     toast(Session('error'), 'error');
         // }
         $data = ContactMassage::latest()->get();
-        return view('admin.website_management.testimonials.index', compact('data'));
+        return view('admin.website_management.contact-us.index', compact('data'));
+    }
+
+    public function reviewed(Request $request, $id)
+    {
+        $data = ContactMassage::findOrFail($id);
+        $data->update(['status' => 0]);
+    
+        return redirect()->route('admin.contact-message.index')->with('success', 'Youtube Video has been deactivated!');
     }
 }

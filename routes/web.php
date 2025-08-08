@@ -76,8 +76,9 @@ Route::middleware(['auth', 'verified'])->prefix('admin')->name('admin.')->group(
     Route::get('/testimonials/active/{id}', [ClientTestimonialsController::class, 'active'])->name('testimonials.active');
     Route::get('/testimonials/inActive/{id}', [ClientTestimonialsController::class, 'inActive'])->name('testimonials.inActive');
 
-    // ========== Testimonials ============
+    // ========== Contact Massage Frontend ============
     Route::get('/contact-us/all', [ContactMassageController::class, 'index'])->name('contact-message.index');
+    Route::get('/contact-us/reviewed/{id}', [ContactMassageController::class, 'reviewed'])->name('contact-message.reviewed');
 });
 
 
