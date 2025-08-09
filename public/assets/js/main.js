@@ -243,3 +243,16 @@ $("#scroll-top").on("click", function (e) {
 //     const originalSrc = "assets/images/loader.gif";
 //     gif.src = originalSrc + "?t=" + new Date().getTime(); // force reload
 // }, 500);
+
+
+window.addEventListener('DOMContentLoaded', () => {
+    const alerts = document.querySelectorAll('.alert-wrapper');
+    if (alerts.length > 0) {
+        setTimeout(() => {
+            alerts.forEach(alert => {
+                const bsAlert = bootstrap.Alert.getOrCreateInstance(alert);
+                bsAlert.close();
+            });
+        }, 5000); // 15 seconds
+    }
+});

@@ -13,6 +13,14 @@ class WebsiteController extends Controller
 {
     public function BannerSliderGet()
     {
+
+        if (session()->has('success')) {
+            toast(Session('success'), 'success');
+        }
+
+        if (session()->has('error')) {
+            toast(Session('error'), 'error');
+        }
         $sliders  = BannerSlider::where('status', 1)->latest()->get();
         $products = Products::where('status', 1)->latest()->get();
         $testimonials = Testimonials::where('status', 1)->latest()->get();

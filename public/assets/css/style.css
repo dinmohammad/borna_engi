@@ -426,6 +426,14 @@ select.form-control{
     line-height: 27px;
     color: #7B7B7B;
 }
+.alert-wrapper{
+    position: absolute !important;
+    top: 10px;
+    right: 10px;
+    z-index: 9;
+    min-width: 214px;
+    max-width: 100%;
+}
 /* ========= Success project count Css END ======== */
 
 

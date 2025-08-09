@@ -11,7 +11,7 @@ use App\Http\Controllers\Admin\WebsiteController;
 
 
 
-Route::get('/', [WebsiteController::class, 'BannerSliderGet'])->name('banner-slider.get');
+Route::get('/', [WebsiteController::class, 'BannerSliderGet'])->name('landing-page.get');
 
 Route::get('/about-us', function () {
     return view('frontend.pages.about.index');
@@ -78,6 +78,7 @@ Route::middleware(['auth', 'verified'])->prefix('admin')->name('admin.')->group(
     // ========== Contact Massage Frontend ============
     Route::get('/contact-us/all', [ContactMassageController::class, 'index'])->name('contact-message.index');
     Route::get('/contact-us/reviewed/{id}', [ContactMassageController::class, 'reviewed'])->name('contact-message.reviewed');
+    Route::post('/contact-us/store', [ContactMassageController::class, 'store'])->name('contact-message.store');
 });
 
 

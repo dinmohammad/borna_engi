@@ -33,9 +33,21 @@
        @yield('styles')
    </head>
    <body class="hidden hidden-ball smooth-scroll" data-primary-color="#f6be00">
-
-
         <main>
+        @if(session('success'))
+            <div class="alert alert-success alert-dismissible fade show alert-wrapper" role="alert">
+                {{ session('success') }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            </div>
+        @endif
+
+        @if(session('error'))
+            <div class="alert alert-danger alert-dismissible fade show alert-wrapper" role="alert">
+                {{ session('error') }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            </div>
+        @endif
+
             <!-- Preloader -->
             <!-- <div id="preloader" class="preloader-activate preloader-active open_tm_preloader">
                 <div class="preloader-area-wrap">

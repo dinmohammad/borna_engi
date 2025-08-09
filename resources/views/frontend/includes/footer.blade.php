@@ -32,22 +32,28 @@
                         <h2 class="text-white">Contact Us</h2>
                     </div>
                     <div class="contact-form-wrap section-content-top-margin">
-                        <form >
+                        <form action="{{ route('admin.contact-message.store') }}" method="POST">
+                        @csrf
                             <div class="row g-4">
                                 <div class="col-md-6">
-                                    <input type="text" class="form-control" placeholder="First name" />
+                                    <input type="text" name="first_name" value="{{ old('first_name') }}" class="form-control" placeholder="First name" required>
+                                    @error('first_name') <small class="text-danger">{{ $message }}</small> @enderror
                                 </div>
                                 <div class="col-md-6">
-                                    <input type="text" class="form-control" placeholder="Last name" />
+                                    <input type="text" name="last_name" value="{{ old('last_name') }}" class="form-control" placeholder="Last name" required>
+                                    @error('last_name') <small class="text-danger">{{ $message }}</small> @enderror
                                 </div>
                                 <div class="col-md-6">
-                                    <input type="email" class="form-control" placeholder="Email" />
+                                    <input type="email" name="email" value="{{ old('email') }}" class="form-control" placeholder="Email" required>
+                                    @error('email') <small class="text-danger">{{ $message }}</small> @enderror
                                 </div>
                                 <div class="col-md-6">
-                                    <input type="text" class="form-control" placeholder="Phone Number" />
+                                    <input type="text" name="number" value="{{ old('number') }}" class="form-control" placeholder="Phone Number" required>
+                                    @error('number') <small class="text-danger">{{ $message }}</small> @enderror
                                 </div>
                                 <div class="col-12">
-                                    <textarea class="form-control" rows="4" placeholder="Message"></textarea>
+                                    <textarea name="message" class="form-control" rows="4" placeholder="Message" required>{{ old('message') }}</textarea>
+                                    @error('message') <small class="text-danger">{{ $message }}</small> @enderror
                                 </div>
                                 <div class="col-12">
                                     <button type="submit" class="theme-white-solid-button">Submit</button>
