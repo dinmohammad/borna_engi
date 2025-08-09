@@ -388,30 +388,30 @@
                     <div class="col-md-12">
                         <div class="swiper video_slider">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide youtube-thumbnail position-relative" data-bs-toggle="modal" data-bs-target="#youtubeModal" data-id="43uo7FRDHDI">
-                                    <img class=" object-fit-cover" src="https://img.youtube.com/vi/43uo7FRDHDI/hqdefault.jpg" width="100%" alt="YouTube Thumbnail">
-                                    <div class="play-button">
-                                        <img class="video-thumbnail" src="{{ asset('assets/images/icons/play.png')}}" width="60" alt="">
+                                @foreach($youtubeVideos as $item)
+                                @php
+                                    preg_match('/(?:v=|\/)([0-9A-Za-z_-]{11})/', $item->url, $matches);
+                                    $videoId = $matches[1] ?? null;
+                                @endphp
+
+                                @if($videoId)
+                                    <div class="swiper-slide youtube-thumbnail position-relative" 
+                                        data-bs-toggle="modal" 
+                                        data-bs-target="#youtubeModal" 
+                                        data-id="{{ $videoId }}">
+                                        <img class="object-fit-cover" 
+                                            src="https://img.youtube.com/vi/{{ $videoId }}/hqdefault.jpg" 
+                                            width="100%" 
+                                            alt="YouTube Thumbnail">
+                                        <div class="play-button">
+                                            <img class="video-thumbnail" 
+                                                src="{{ asset('assets/images/icons/play.png') }}" 
+                                                width="60" 
+                                                alt="">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="swiper-slide youtube-thumbnail position-relative" data-bs-toggle="modal" data-bs-target="#youtubeModal" data-id="JvdU0kN9swk">
-                                    <img class=" object-fit-cover" src="https://img.youtube.com/vi/JvdU0kN9swk/hqdefault.jpg" width="100%" alt="YouTube Thumbnail">
-                                    <div class="play-button">
-                                        <img src="{{ asset('assets/images/icons/play.png')}}" width="60" alt="">
-                                    </div>
-                                </div>
-                                <div class="swiper-slide youtube-thumbnail position-relative" data-bs-toggle="modal" data-bs-target="#youtubeModal" data-id="i163RsDQIvc">
-                                    <img class=" object-fit-cover" src="https://img.youtube.com/vi/i163RsDQIvc/hqdefault.jpg" width="100%" alt="YouTube Thumbnail">
-                                    <div class="play-button">
-                                        <img src="{{ asset('assets/images/icons/play.png')}}" width="60" alt="">
-                                    </div>
-                                </div>
-                                <div class="swiper-slide youtube-thumbnail position-relative" data-bs-toggle="modal" data-bs-target="#youtubeModal" data-id="NEMr3DvJ5No">
-                                    <img class=" object-fit-cover" src="https://img.youtube.com/vi/NEMr3DvJ5No/hqdefault.jpg" width="100%" alt="YouTube Thumbnail">
-                                    <span class="play-button">
-                                        <img src="{{ asset('assets/images/icons/play.png')}}" width="60" alt="">
-                                    </span>
-                                </div>
+                                @endif
+                            @endforeach
                             </div>
                             <!-- Navigation buttons -->
                             <!-- <div class="swiper-button-prev"></div>
@@ -458,21 +458,11 @@
                     <div class="col-md-12">
                         <div class="swiper gallary_slider">
                             <div class="swiper-wrapper">
+                                @foreach($sliders as $item)
                                 <div class="swiper-slide">
-                                    <img src="{{ asset('assets/images/banner/1.jpg')}}" width="100%" height="100%" alt="">
+                                    <img src="{{ asset($item->image)}}" width="100%" height="100%" alt="">
                                 </div>
-                                <div class="swiper-slide">
-                                    <img src="{{ asset('assets/images/banner/2.jpg')}}" width="100%" height="100%" alt="">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="{{ asset('assets/images/banner/3.jpg')}}" width="100%" height="100%" alt="">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="{{ asset('assets/images/banner/4.jpg')}}" width="100%" height="100%" alt="">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="{{ asset('assets/images/banner/5.jpg')}}" width="100%" height="100%" alt="">
-                                </div>
+                                @endforeach
                             </div>
                         </div>
                         <!-- Navigation buttons -->
